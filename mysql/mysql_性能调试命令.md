@@ -125,7 +125,7 @@ INSERT DELAYED已经处理完了所有待处理的插入操作，正在等待新
 
 In_use列表示有多少线程正在使用某张表，Name_locked表示表名是否被锁
 
-![](mysql_性能调试命令/image002.png)
+![](mysql_性能调试命令.files/image002.png)
 
 ** **
 
@@ -133,7 +133,7 @@ In_use列表示有多少线程正在使用某张表，Name_locked表示表名是
 
 ** **
 
-![](mysql_性能调试命令/image004.png)
+![](mysql_性能调试命令.files/image004.png)
 
 
 
