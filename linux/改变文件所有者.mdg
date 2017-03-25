@@ -1,0 +1,2 @@
+chown -R -v user:group file
+

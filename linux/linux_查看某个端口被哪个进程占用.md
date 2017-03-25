@@ -1,0 +1,32 @@
+netstat -nap | grep 端口号
+
+
+
+n  表示不翻译端口为名字
+
+a  所有的端口都显示
+
+p  显示占用此端口的线程PID
+
+
+
+例如查看网管和mysql的pid
+
+
+
+netstat -nap |grep 3003
+
+
+
+.........
+
+tcp        0      0 ::ffff:127.0.0.1:3003       ::ffff:127.0.0.1:54886
+ESTABLISHED 26323/./mysqld
+
+tcp        0      0 ::ffff:127.0.0.1:54886      ::ffff:127.0.0.1:3003
+ESTABLISHED 8793/java
+
+.........
+
+
+

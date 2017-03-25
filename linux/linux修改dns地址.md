@@ -1,0 +1,38 @@
+viLinux中修改DNS有两种方式，临时修改和永久修改，下面分别介绍。
+
+**1****、临时修改网卡****DNS****地址**
+
+sudo vim /etc/resolv.conf
+
+改为如下内容：
+
+nameserver 8.8.8.8 #修改成你的主DNS
+
+nameserver 8.8.4.4 #修改成你的备用DNS
+
+search localhost #你的域名base
+
+我这里用了谷歌的DNS解析服务器，修改后:wq退出，配置会实时生效，但是重启系统后可能会丢失配置。其实编辑这个文件的时候，你也应该能看到文件头部“不要手动编
+辑”的注释。![](linux修改dns地址/image002.png)
+
+**2****、永久修改网卡****DNS**
+
+sudo –i
+
+cd /etc/resolvconf/resolv.conf.d
+
+vim base
+
+添加如下内容
+
+nameserver 8.8.8.8
+
+nameserver 8.8.4.4
+
+:wq 保存退出，这样重启后设置就不会丢失了。
+
+其实你cat head文件会找到图片中头部注释的那段话，不难推测resolv.conf文件就是根据/etc/resolvconf/resolv.conf.d
+目录中的这几个文件生成的。
+
+
+

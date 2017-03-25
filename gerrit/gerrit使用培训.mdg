@@ -37,13 +37,13 @@ Push必须使用命令
 
 在项目根目录会提供push.bat文件，在命令行直接执行push即可
 
-![](gerrit使用培训/image002.gif)
+![](doc_to_html.files/image002.gif)
 
 为了避免错误，建议在git setting中将push按钮隐藏掉
 
-![](gerrit使用培训/image004.gif)
+![](doc_to_html.files/image004.gif)
 
-![](gerrit使用培训/image006.gif)
+![](doc_to_html.files/image006.gif)
 
 
 
@@ -59,11 +59,11 @@ Push必须使用命令
 
 5、在gerrit下可以看到
 
-![](gerrit使用培训/image008.gif)
+![](doc_to_html.files/image008.gif)
 
 6、点击需要审核的记录
 
-![](gerrit使用培训/image010.gif)
+![](doc_to_html.files/image010.gif)
 
 7、
 
@@ -97,5 +97,5 @@ base，在本地解决完冲突之后再push提交评审
 4、对于abandon的提交如果不需要做任何修改想再次提交评审，则需要通过commit界面中的Amend last
 Commit按钮再次生成一次新的commit才能提交评审
 
-![](gerrit使用培训/image012.gif)
+![](doc_to_html.files/image012.gif)
 
