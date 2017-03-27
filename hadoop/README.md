@@ -66,7 +66,7 @@ This command was run using /opt/hadoop-2.7.3/share/hadoop/common/hadoop-common-2
 export JAVA_HOME=/usr/lib/java/jdk1.8.0_121
 ```
 
-修改/opt/hadoop-2.7.3/hadoop/etc/core-site.xml
+修改/opt/hadoop-2.7.3/etc/hadoop/core-site.xml
 
 加入
 ```
