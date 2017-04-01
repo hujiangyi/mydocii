@@ -1,5 +1,10 @@
+
 * [简介](README.md)
-* [第一章](linux/README.md)
+* 第一章 hadoop 知识积累
+ - [V2.7.3版安装](hadoop/README.md)
+ - [HDFS设计思想](hadoop/HDFS架构和设计思想.md)
+ - [DataNode部署](hadoop/如何快速复制一个DataNode.md)
+* 第二章 linux
  - [Linux的bg和fg命令](linux/Linux的bg和fg命令.md)
  - [linux_find](linux/linux_find.md)
  - [vi_替换](linux/vi_替换.md)
@@ -42,8 +47,6 @@
  - [改变文件所有者](linux/改变文件所有者.md)
  - [占用磁盘大小查看](linux/占用磁盘大小查看.md)
  - [查看端口传输状态](linux/查看端口传输状态.md)
-* 第二章 hadoop 知识积累
- - [V2.7.3版安装](hadoop/README.md)
 * 第三章 Gerrit 知识积累
  - [gerrit使用培训](gerrit/gerrit使用培训.md)
 * 第四章 Mysql 知识积累
