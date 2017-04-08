@@ -13,7 +13,7 @@ nameserver 8.8.4.4 #修改成你的备用DNS
 search localhost #你的域名base
 
 我这里用了谷歌的DNS解析服务器，修改后:wq退出，配置会实时生效，但是重启系统后可能会丢失配置。其实编辑这个文件的时候，你也应该能看到文件头部“不要手动编
-辑”的注释。![](linux修改dns地址.files/image002.png)
+辑”的注释。![](修改dns地址.files/image002.png)
 
 **2****、永久修改网卡****DNS**
 
