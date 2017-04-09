@@ -2,11 +2,27 @@
 
 ## 常用的格式
 
-if [ -d /tmp/$FILENAME ]; then
+if [ $FILETYPE = 'md' ] || [ $FILETYPE = 'txt' ]; then
 
-     # Remove temp dir
+     if [ ! -d md/$SUBPATH ]; then
 
-     rm -rf /tmp/$FILENAME >&2
+         mkdir md/$SUBPATH
+
+     fi
+
+     cp $RENAMEPATH md/$SUBPATH/$FILENAME.md
+
+elif [ $FILETYPE = 'doc' ] || [ $FILETYPE = 'docx' ] ; then
+
+     ./doc-to-html.sh $RENAMEPATH /tmp/$FILENAME $FILENAME
+
+     ./html-to-md.sh $RENAMEPATH /tmp/$FILENAME $FILENAME
+
+     ./cpmd.sh $FILENAME $SUBPATH
+
+else
+
+     echo "else"
 
 fi
 
