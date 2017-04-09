@@ -4,7 +4,20 @@
  - [V2.7.3版安装](hadoop/部署hadoop2.7.3.md)
  - [HDFS设计思想](hadoop/HDFS架构和设计思想.md)
  - [DataNode部署](hadoop/如何快速复制一个DataNode.md)
-* 第二章 linux安装
+* 第二章 shell编程
+ - [Shell_if_判断](linux/shell/Shell_if_判断.md)
+ - [Shell_变量字符串替换](linux/shell/Shell_变量字符串替换.md)
+* 第三章 vi使用
+ - [vi_替换](linux/vi/vi_替换.md)
+ - [vi_命令指南](linux/vi/vi_命令指南.md)
+* 第四章 Mysql 知识积累
+ - [mysql_用户管理](mysql/mysql_用户管理.md)
+ - [mysql_性能调试命令](mysql/mysql_性能调试命令.md)
+ - [MySQL_innodb_lock_wait_锁等待](mysql/MySQL_innodb_lock_wait_锁等待.md)
+* 第五章 git使用
+ - [git命令](linux/git/git命令.md)
+ - [git_config的使用](linux/git/git_config的使用.md)
+* 第六章 linux安装
  - [初始环境下修改root的秘码](linux/安装/初始环境下修改root的秘码.md)
  - [环境参数修改](linux/安装/环境参数修改.md)
  - [使用Xmanager远程访问KDE_2](linux/安装/如何设置Linux使用Xmanager远程访问KDE_2.md)
@@ -25,7 +38,7 @@
  - [Tsocks_安装配置](linux/安装/Tsocks_安装配置.md)
  - [Apt_安装_错误处理](linux/安装/Apt_安装_错误处理.md)
  - [Apt_安装_提示Media_change](linux/安装/Apt_安装_提示Media_change.md)
-* 第三章 linux使用技巧
+* 第七章 linux使用技巧
  - [awk统计](linux/技巧/awk统计.md)
  - [find](linux/技巧/find.md)
  - [linux下搭建InnoSetup编译windows安装程序](linux/技巧/linux下搭建InnoSetup编译windows安装程序.md)
@@ -40,22 +53,7 @@
  - [多文件中查找字符串](linux/技巧/多文件中查找字符串.md)
  - [查看占用磁盘大小查看](linux/技巧/查看占用磁盘大小查看.md)
  - [查看某个端口被哪个进程占用](linux/技巧/查看某个端口被哪个进程占用.md)
-* 第四章 vi使用
- - [vi_替换](linux/vi/vi_替换.md)
- - [vi_命令指南](linux/vi/vi_命令指南.md)
-* 第五章 shell编程
- - [Shell_if_判断](linux/shell/Shell_if_判断.md)
- - [Shell_变量字符串替换](linux/shell/Shell_变量字符串替换.md)
-* 第六章 git使用
- - [git命令](linux/git/git命令.md)
- - [git_config的使用](linux/git/git_config的使用.md)
-* 第七章 Gerrit 知识积累
+* 第八章 Gerrit 知识积累
  - [gerrit使用培训](gerrit/gerrit使用培训.md)
  - [gerrit_ssh](gerrit/gerrit_ssh.md)
  - [修改meta_config](gerrit/修改meta_config.md)
-* 第八章 Mysql 知识积累
- - [mysql_用户管理](mysql/mysql_用户管理.md)
- - [mysql_性能调试命令](mysql/mysql_性能调试命令.md)
- - [MySQL_innodb_lock_wait_锁等待](mysql/MySQL_innodb_lock_wait_锁等待.md)
-
-
