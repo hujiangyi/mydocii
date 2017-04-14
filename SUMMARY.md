@@ -61,4 +61,4 @@
  - [gerrit_ssh](gerrit/gerrit_ssh.md)
  - [修改meta_config](gerrit/修改meta_config.md)
 * 第九章 工作相关
- - [批量升级安装包制作](gerrit/批量升级安装包制作.md)
+ - [批量升级安装包制作](work/批量升级安装包制作.md)
