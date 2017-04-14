@@ -1,0 +1,50 @@
+# 在openKm上下载安装包
+
+![](doc_to_html.files/image002.gif)
+
+# 为每个版本建立自己的目录
+
+Z:\镜像\CC8800B-V1.3.7.21_packetImage
+
+# 编辑upgrade文件
+
+subType需要与文件名对应，关注大小写，对E型没有subType区分，这里可以为空
+
+![](doc_to_html.files/image004.gif)
+
+![](doc_to_html.files/image006.gif)
+
+# 将UPGRADE文件另存为UTF-8的编码
+
+![](doc_to_html.files/image008.gif)
+
+# 修改镜像名称
+
+如果没有subType区分的可以不用改名称
+
+![](doc_to_html.files/image010.gif)
+
+![](doc_to_html.files/image012.gif)
+
+# 上传到linux
+
+![](doc_to_html.files/image014.gif)
+
+
+
+# 登陆linux进入到对应的版本目录，并执行打包命令
+
+tar -zcvf CC8800B-V1.3.7.21_packetImage.tar.gz * --exclude *.gz
+
+![](doc_to_html.files/image016.gif)
+
+
+
+# 将打包好的文件传回windows
+
+![](doc_to_html.files/image018.gif)
+
+
+
+# 上传到FTP服务器
+

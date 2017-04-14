@@ -1,3 +1,11 @@
+Windows
+
+Netstat –nao | findstr 端口号
+
+
+
+linux
+
 netstat -nap | grep 端口号
 
 
@@ -27,6 +35,12 @@ tcp        0      0 ::ffff:127.0.0.1:54886      ::ffff:127.0.0.
 ESTABLISHED 8793/java
 
 .........
+
+
+
+macOS
+
+lsof -n -P -i TCP -s TCP:LISTEN
 
 
 

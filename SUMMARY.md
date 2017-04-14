@@ -10,6 +10,9 @@
 * 第三章 vi使用
  - [vi_替换](linux/vi/vi_替换.md)
  - [vi_命令指南](linux/vi/vi_命令指南.md)
+ - [用ack替换grep](linux/vi/用ack替换grep.md)
+ - [Vim_添加NERDtree插件](linux/vi/Vim_添加NERDtree插件.md)
+ - [Easymotion__for_vim](linux/vi/Easymotion__for_vim.md)
 * 第四章 Mysql 知识积累
  - [mysql_用户管理](mysql/mysql_用户管理.md)
  - [mysql_性能调试命令](mysql/mysql_性能调试命令.md)
@@ -57,3 +60,5 @@
  - [gerrit使用培训](gerrit/gerrit使用培训.md)
  - [gerrit_ssh](gerrit/gerrit_ssh.md)
  - [修改meta_config](gerrit/修改meta_config.md)
+* 第九章 工作相关
+ - [批量升级安装包制作](gerrit/批量升级安装包制作.md)
