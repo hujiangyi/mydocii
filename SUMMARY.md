@@ -60,5 +60,7 @@
  - [gerrit使用培训](gerrit/gerrit使用培训.md)
  - [gerrit_ssh](gerrit/gerrit_ssh.md)
  - [修改meta_config](gerrit/修改meta_config.md)
-* 第九章 工作相关
+* 第九章 SS
+ - [ss翻墙工具和账号共享](ss/ss翻墙工具和账号共享.md)
+* 第十章 工作相关
  - [批量升级安装包制作](work/批量升级安装包制作.md)
