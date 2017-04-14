@@ -20,6 +20,8 @@
 * 第五章 git使用
  - [git命令](linux/git/git命令.md)
  - [git_config的使用](linux/git/git_config的使用.md)
+ - [Git_忽略某些文件](linux/git/Git_忽略某些文件.md)
+ - [Git_子项目](linux/git/Git_子项目.md)
 * 第六章 linux安装
  - [初始环境下修改root的秘码](linux/安装/初始环境下修改root的秘码.md)
  - [环境参数修改](linux/安装/环境参数修改.md)
@@ -56,13 +58,18 @@
  - [多文件中查找字符串](linux/技巧/多文件中查找字符串.md)
  - [查看占用磁盘大小查看](linux/技巧/查看占用磁盘大小查看.md)
  - [查看某个端口被哪个进程占用](linux/技巧/查看某个端口被哪个进程占用.md)
-* 第八章 Gerrit 知识积累
+* 第八章 Android
+ - [AndroidManifest(supports-screens)文件详解](android/AndroidManifest(supports-screens)文件详解.md)
+ - [AndroidManifest(uses-configuration)文件详解](android/AndroidManifest(uses-configuration)文件详解.md)
+ - [AndroidManifest(uses-library)文件详解](android/AndroidManifest(uses-library)文件详解.md)
+ - [AndroidManifest(uses-permission)文件详解](android/AndroidManifest(uses-permission)文件详解.md)
+* 第九章 Gerrit 知识积累
  - [gerrit使用培训](gerrit/gerrit使用培训.md)
  - [gerrit_ssh](gerrit/gerrit_ssh.md)
  - [修改meta_config](gerrit/修改meta_config.md)
-* 第九章 SS
+* 第十章 SS
  - [ss翻墙工具和账号共享](ss/ss翻墙工具和账号共享.md)
-* 第十章 工作相关
+* 第十一章 工作相关
  - [批量升级安装包制作](work/批量升级安装包制作.md)
  - [推广网站](http://172.17.1.251:8110/spread)
  - [李翔整理](http://172.17.1.251:8110/dm/dm.html)
