@@ -1,13 +1,13 @@
 **语法（SYNTAX）：**
 
-<uses-
+< uses-
 libraryandroid:_[name](http://developer.android.com/guide/topics/manifest
 /uses-library-element.html#nm)_="_string_"  
               android:_[required](http://developer.android.com/guide/topics/manifest/uses-library-element.html#rq)_=["true" | "false"] />
 
 **被包含于（CONTAINED IN）：**
 
-<application>
+< application>
 
 **说明（DESCRIPTION）：**
 

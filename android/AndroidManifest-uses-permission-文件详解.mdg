@@ -1,12 +1,12 @@
 **语法（SYNTAX）：**
 
-<uses-
+< uses-
 permissionandroid:_[name](http://developer.android.com/guide/topics/manifest
 /uses-permission-element.html#nm)_="_string_"/>
 
 **被包含于（CONTAINED IN）：**
 
-<manifest>
+< manifest>
 
 **说明（DESCRIPTION）：**
 

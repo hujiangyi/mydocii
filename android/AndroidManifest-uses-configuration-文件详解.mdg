@@ -1,7 +1,7 @@
 **语法（SYNTAX）：**
 
-<uses-configurationandroid:_[reqFiveWayNav](http://developer.android.com/guide
-/topics/manifest/uses-configuration-element.html#five)_=["true" | "false"]  
+< uses-configurationandroid:_[reqFiveWayNav](http://developer.android.com/guid
+e/topics/manifest/uses-configuration-element.html#five)_=["true" | "false"]  
                     android:_[reqHardKeyboard](http://developer.android.com/guide/topics/manifest/uses-configuration-element.html#hard)_=["true" | "false"]  
                     android:_[reqKeyboardType](http://developer.android.com/guide/topics/manifest/uses-configuration-element.html#kbd)_=["undefined" | "nokeys" | "qwerty" | "twelvekey"]  
                     android:_[reqNavigation](http://developer.android.com/guide/topics/manifest/uses-configuration-element.html#nav)_=["undefined" | "nonav" | "dpad" | "trackball" | "wheel"]  
@@ -9,20 +9,22 @@
 
 **被包含于（CONTAINED IN）：**
 
-<manifest>
+< manifest>
 
 **说明（DESCRIPTION）：**
 
 这个属性用于指定该应用程序所需要的硬件和软件功能。例如，应用程序可以用这个元素指定它所需要的物理键盘或特殊的导航设备，如轨迹球。使用这个规范可以避免把应用程
 序安装在那些不支持其不能工作的设备上。
 
-如果应用程序能够用不同的设备配置来工作，那么它就应该给每个配置包含一个独立的<uses-configuration>声明。每个声明必须被完成。例如，应用程序
-需要一个五向导航控制，就要需要一个支持手指操作的触屏，以及一个标准的QWERTY键盘或12键的数字键盘，因此要用两个<uses-
+如果应用程序能够用不同的设备配置来工作，那么它就应该给每个配置包含一个独立的< uses-configuration>声明。每个声明必须被完成。例如，应用程
+序需要一个五向导航控制，就要需要一个支持手指操作的触屏，以及一个标准的QWERTY键盘或12键的数字键盘，因此要用两个<uses-
 configuration>元素来指定这些需求：
 
-<uses-configurationandroid:reqFiveWayNav="true"android:reqTouchScreen="finger"  
+< uses-
+configurationandroid:reqFiveWayNav="true"android:reqTouchScreen="finger"  
                     android:reqKeyboardType="qwerty"/>  
-<uses-configurationandroid:reqFiveWayNav="true"android:reqTouchScreen="finger"  
+< uses-
+configurationandroid:reqFiveWayNav="true"android:reqTouchScreen="finger"  
                     android:reqKeyboardType="twelvekey"/>
 
 
@@ -48,81 +50,20 @@ d属性设置为true。
 
 它的属性值必须是下表中值之一：
 
-值
-
-说明
-
-undefined
-
-应用程序不需要键盘。（键盘的需求没有被定义。）这是默认值。
-
-nokeys
-
-应用程序不需要键盘，明确定义该应用不需要键盘
-
-qwerty
-
-应用程序需要一个标准的QWERTY键盘。
-
-twelvekey
-
-应用程序需要一个像大多电话那样的12键的数字键盘，键盘中包括0~9的数字和“*”号键、“#”号键。
+![](doc_to_html.files/image002.png)
 
 **android:reqNavigation**
 
 这个属性定义了应用程序所需要的任何导航设备，属性值必须是下表中的值之一：
 
-值
-
-说明
-
-undefined
-
-应用程序不需要任何类型的导航控制。（应用程序的导航需求没有被定义。）这是默认值。
-
-nonav
-
-应用程序不需要到导航控制。
-
-dpad
-
-应用程序要求使用D-pad(方向板)来进行导航控制
-
-trackball
-
-应用程序要求使用轨迹球来进行导航控制
-
-wheel
-
-应用程序要求使用一个导航滚轮来进行导航控制。
-
-如果应用程序要求一个导航控制，但并不关心具体的控制类型，那么就要把reqFiveWayNav属性设置为true，而不是只设置这一个属性。
+![](doc_to_html.files/image004.png)如果应用程序要求一个导航控制，但并不关心具体的控制类型，那么就要把reqFiveWay
+Nav属性设置为true，而不是只设置这一个属性。
 
 **android:reqTouchScreen**
 
 这个属性用于设置应用程序所需要的任何触屏类型。属性值必须是下表中的字符串之一：
 
-值
-
-说明
-
-undefined
-
-应用程序不需要触屏。（触屏的需求不被定义。）这是默认值。
-
-notouch
-
-应用程序不需要触屏
-
-stylus
-
-应用程序需要带有触控笔操作的触屏。
-
-finger
-
-应用程序需要能够用一个手指进行操作的触屏。
-
-**被引入的版本（INTRODUCED IN）**
+![](doc_to_html.files/image006.png)**被引入的版本（INTRODUCED IN）**
 
 API Level 3
 
