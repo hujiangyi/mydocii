@@ -60,7 +60,7 @@
  - [查看某个端口被哪个进程占用](linux/技巧/查看某个端口被哪个进程占用.md)
 * 第八章 Android
  - [AndroidManifest-supports-screens文件详解](android/AndroidManifest-supports-screens文件详解.md)
- - [AndroidManifest-uses-configuration-文件详解](android/AndroidManifest-uses-configuration-文件详解)文件详解.md)
+ - [AndroidManifest-uses-configuration-文件详解](android/AndroidManifest-uses-configuration-文件详解.md)
  - [AndroidManifest-uses-library-文件详解](android/AndroidManifest-uses-library-文件详解.md)
  - [AndroidManifest-uses-permission-文件详解](android/AndroidManifest-uses-permission-文件详解.md)
 * 第九章 Gerrit 知识积累
