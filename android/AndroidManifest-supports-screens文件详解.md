@@ -1,6 +1,6 @@
 **语法（SYNTAX）：**
 
-<supports-screensandroid:_[resizeable](http://developer.android.com/guide/topi
+< supports-screensandroid:_[resizeable](http://developer.android.com/guide/topi
 cs/manifest/supports-screens-element.html#resizeable)_=["true"|"false"]  
                   android:_[smallScreens](http://developer.android.com/guide/topics/manifest/supports-screens-element.html#small)_=["true" | "false"]  
                   android:_[normalScreens](http://developer.android.com/guide/topics/manifest/supports-screens-element.html#normal)_=["true" | "false"]  
