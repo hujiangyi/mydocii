@@ -6,7 +6,6 @@
  - [DataNode部署](hadoop/如何快速复制一个DataNode.md)
 * 第二章 MUI HTML5+
  - [MUI_构建离线打包工程Android版](mui/MUI_构建离线打包工程Android版.md)
- - [Shell_变量字符串替换](linux/shell/Shell_变量字符串替换.md)
 * 第三章 shell编程
  - [Shell_if_判断](linux/shell/Shell_if_判断.md)
  - [Shell_变量字符串替换](linux/shell/Shell_变量字符串替换.md)
@@ -73,6 +72,12 @@
 * 第十一章 SS
  - [ss翻墙工具和账号共享](ss/ss翻墙工具和账号共享.md)
 * 第十二章 工作相关
+ - [功能调试中日志配置调整记录](work/功能调试中日志配置调整记录.md)
+ - [发送OLT测试告警](work/发送OLT测试告警.md)
+ - [DelayQueue的使用](work/DelayQueue的使用.md)
+ - [EponIndex说明](work/EponIndex说明.md)
+ - [Linux版本安装或更新](work/Linux版本安装或更新.md)
  - [批量升级安装包制作](work/批量升级安装包制作.md)
  - [推广网站](http://172.17.1.251:8110/spread)
  - [李翔整理](http://172.17.1.251:8110/dm/dm.html)
+ - [EMS-API](http://172.17.1.251:8110/ems-api)
