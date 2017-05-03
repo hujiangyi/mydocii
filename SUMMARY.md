@@ -78,6 +78,7 @@
  - [EponIndex说明](work/EponIndex说明.md)
  - [Linux版本安装或更新](work/Linux版本安装或更新.md)
  - [批量升级安装包制作](work/批量升级安装包制作.md)
+ - [CM-GL-PNMP-V03-160725](work/CM-GL-PNMP-V03-160725.md)
  - [推广网站](http://172.17.1.251:8110/spread)
  - [李翔整理](http://172.17.1.251:8110/dm/dm.html)
  - [EMS-API](http://172.17.1.251:8110/ems-api)
