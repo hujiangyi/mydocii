@@ -73,6 +73,7 @@
  - [cruisecontrol启动报错](cc/cruisecontrol启动报错.md)
 * 第十二章 SS
  - [ss翻墙工具和账号共享](ss/ss翻墙工具和账号共享.md)
+ - [ss 账号分享](https://dream.ren/ss.html)
 * 第十三章 工作相关
  - [功能调试中日志配置调整记录](work/功能调试中日志配置调整记录.md)
  - [发送OLT测试告警](work/发送OLT测试告警.md)
