@@ -6,6 +6,7 @@
  - [DataNode部署](hadoop/如何快速复制一个DataNode.md)
 * 第二章 MUI HTML5+
  - [MUI_构建离线打包工程Android版](mui/MUI_构建离线打包工程Android版.md)
+ - [MUI_构建离线打包工程iOS版](mui/MUI_构建离线打包工程iOS版.md)
 * 第三章 shell编程
  - [Shell_if_判断](linux/shell/Shell_if_判断.md)
  - [Shell_变量字符串替换](linux/shell/Shell_变量字符串替换.md)
@@ -74,6 +75,8 @@
 * 第十二章 SS
  - [ss翻墙工具和账号共享](ss/ss翻墙工具和账号共享.md)
  - [ss 账号分享](https://dream.ren/ss.html)
+ - [ss 账号分享](https://doub.bid/sszhfx)
+ - [花香ss账号自用](ss/花香ss账号自用.md)
 * 第十三章 工作相关
  - [功能调试中日志配置调整记录](work/功能调试中日志配置调整记录.md)
  - [发送OLT测试告警](work/发送OLT测试告警.md)
