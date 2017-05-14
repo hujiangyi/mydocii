@@ -78,7 +78,9 @@
  - [ss 账号分享](https://dream.ren/ss.html)
  - [ss 账号分享](https://doub.bid/sszhfx)
  - [花香ss账号自用](ss/花香ss账号自用.md)
-* 第十三章 工作相关
+* 第十三章 windows
+ - [WIN10激活](system/WIN10激活.md)
+* 第十四章 工作相关
  - [功能调试中日志配置调整记录](work/功能调试中日志配置调整记录.md)
  - [发送OLT测试告警](work/发送OLT测试告警.md)
  - [DelayQueue的使用](work/DelayQueue的使用.md)
