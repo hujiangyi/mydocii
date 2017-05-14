@@ -42,6 +42,7 @@
  - [minicom](linux/安装/minicom.md)
  - [linux_安装mysql缺少依赖](linux/安装/linux_安装mysql缺少依赖.md)
  - [初次安装ubuntu后直接安装NM3000无法启动MYSQL的问题](linux/安装/初次安装ubuntu后直接安装NM3000无法启动MYSQL的问题.md)
+ - [初次安装ubuntu性能展示中曲线图导出成图片，中文出现乱码](linux/安装/初次安装ubuntu性能展示中曲线图导出成图片，中文出现乱码.md)
  - [isc-dhcp-server](linux/安装/isc-dhcp-server.md)
  - [Tsocks_安装配置](linux/安装/Tsocks_安装配置.md)
  - [Apt_安装_错误处理](linux/安装/Apt_安装_错误处理.md)
