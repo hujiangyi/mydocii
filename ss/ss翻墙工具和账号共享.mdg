@@ -13,13 +13,25 @@ Windows-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E>
 
 ## 账号共享
 
-服务器：vip01.52ss.pub
+服务器：104.238.134.72
 
-端口：30032
+端口：3000
 
-密码：336336
+密码：topvision
 
-加密方式：aes-256-cfb
+加密方式：chacha20
+
+
+
+
+
+## 服务器管理
+
+/etc/init.d/shadowsocks restart
+
+firewall-cmd \--zone=public --add-port=3000/tcp –permanent
+
+firewall-cmd \--reload
 
 
 

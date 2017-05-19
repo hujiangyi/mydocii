@@ -62,6 +62,7 @@
  - [多文件中查找字符串](linux/技巧/多文件中查找字符串.md)
  - [查看占用磁盘大小查看](linux/技巧/查看占用磁盘大小查看.md)
  - [查看某个端口被哪个进程占用](linux/技巧/查看某个端口被哪个进程占用.md)
+ - [CentOS7使用firewalld打开关闭防火墙与端口](linux2/技巧/CentOS7使用firewalld打开关闭防火墙与端口.md)
 * 第九章 Android
  - [AndroidManifest-supports-screens文件详解](android/AndroidManifest-supports-screens文件详解.md)
  - [AndroidManifest-uses-configuration-文件详解](android/AndroidManifest-uses-configuration-文件详解.md)
@@ -77,10 +78,10 @@
  - [ss翻墙工具和账号共享](ss/ss翻墙工具和账号共享.md)
  - [ss 账号分享](https://dream.ren/ss.html)
  - [ss 账号分享](https://doub.bid/sszhfx)
- - [花香ss账号自用](ss/花香ss账号自用.md)
 * 第十三章 windows
  - [WIN10激活](system/WIN10激活.md)
 * 第十四章 工作相关
+ - [SNR与CNR](knowledge/SNR与CNR.md)
  - [功能调试中日志配置调整记录](work/功能调试中日志配置调整记录.md)
  - [发送OLT测试告警](work/发送OLT测试告警.md)
  - [DelayQueue的使用](work/DelayQueue的使用.md)
