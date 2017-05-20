@@ -1,0 +1,25 @@
+1、用win+r调用出执行窗口
+
+2、输入powershell
+
+3、在弹出界面后，在任务栏找到对应的powershell窗口
+
+![](Win10应用、Crtana小娜都打不开问题的解决.files/image001.png)
+
+4、新弹出的界面左上角会显示 administrator:Windows PowerShell
+
+![](Win10应用、Crtana小娜都打不开问题的解决.files/image002.png)
+
+5、执行命令
+
+$manifest = (Get-AppxPackage Microsoft.WindowsStore).InstallLocation +
+'\AppxManifest.xml' ; Add-AppxPackage -DisableDevelopmentMode -Register
+$manifest
+
+6、执行命令
+
+Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode
+-Register "$($_.InstallLocation)\AppXManifest.xml"}
+
+
+
