@@ -1,22 +1,24 @@
-1、用win+r调用出执行窗口
+1、首先必须打开windows防火墙，不知道原因，但是不开的话执行修复命令会报错，修复不能完全成功
 
-2、输入powershell
+2、用win+r调用出执行窗口
 
-3、在弹出界面后，在任务栏找到对应的powershell窗口
+3、输入powershell
+
+4、在弹出界面后，在任务栏找到对应的powershell窗口
 
 ![](doc_to_html.files/image001.png)
 
-4、新弹出的界面左上角会显示 administrator:Windows PowerShell
+5、新弹出的界面左上角会显示 administrator:Windows PowerShell
 
 ![](doc_to_html.files/image002.png)
 
-5、执行命令
+6、执行命令
 
 $manifest = (Get-AppxPackage Microsoft.WindowsStore).InstallLocation +
 '\AppxManifest.xml' ; Add-AppxPackage -DisableDevelopmentMode -Register
 $manifest
 
-6、执行命令
+7、执行命令
 
 Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode
 -Register "$($_.InstallLocation)\AppXManifest.xml"}
