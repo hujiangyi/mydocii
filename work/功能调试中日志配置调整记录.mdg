@@ -1,10 +1,6 @@
 ## 关闭所有日志
 
-UPDATE com.* SET    LEVEL = ERROR
-
-UPDATE net.* SET      LEVEL = ERROR
-
-UPDATE org.* SET      LEVEL = ERROR
+ UPDATE com.* AND org.* AND net.* SET           LEVEL = OFF
 
 
 
@@ -16,43 +12,21 @@ UPDATE org.* SET      LEVEL = ERROR
 
 ## 打开批量升级日志
 
-UPDATE com.topvision.ems.upgrade.job.UpgradeJob SET LEVEL = DEBUG
-
-UPDATE com.topvision.ems.upgrade.service.* SET    LEVEL = DEBUG
-
-UPDATE com.topvision.ems.upgrade.worker.* SET    LEVEL = DEBUG
-
-UPDATE com.topvision.ems.upgrade.worker.CcmtsUpgradeWorkerA SET LEVEL = DEBUG
-
-UPDATE com.topvision.ems.upgrade.worker.CcmtsUpgradeWorkerB SET  LEVEL = DEBUG
-
-UPDATE com.topvision.ems.upgrade.worker.OnuUpgradeWorker SET        LEVEL =
+UPDATE com.topvision.ems.upgrade.job.UpgradeJob ADN
+com.topvision.ems.upgrade.service.* AND com.topvision.ems.upgrade.worker.* AND
+com.topvision.ems.upgrade.worker.CcmtsUpgradeWorkerA AND
+com.topvision.ems.upgrade.worker.CcmtsUpgradeWorkerB AND
+com.topvision.ems.upgrade.worker.OnuUpgradeWorker AND
+com.topvision.ems.upgrade.worker.UpgradeThreadPoolManager SET        LEVEL =
 DEBUG
-
-UPDATE com.topvision.ems.upgrade.worker.UpgradeThreadPoolManager SET
-LEVEL = DEBUG
-
-
-
-
 
 ## 批量配置下发
 
-UPDATE com.topvision.ems.network.service.impl.CmtsCommandSendWorkerB SET LEVEL
-= DEBUG
-
-UPDATE com.topvision.ems.network.service.impl.OltCommandSendWorker SET
-LEVEL = DEBUG
-
-UPDATE com.topvision.ems.network.service.impl.CommandSendServiceImpl SET
-LEVEL = DEBUG
-
-UPDATE com.topvision.ems.network.service.impl.CommandSendPoolable SET LEVEL =
+UPDATE com.topvision.ems.network.service.impl.CmtsCommandSendWorkerB AND
+com.topvision.ems.network.service.impl.OltCommandSendWorker AND
+com.topvision.ems.network.service.impl.CommandSendServiceImpl AND
+com.topvision.ems.network.service.impl.CommandSendPoolable SET        LEVEL =
 DEBUG
-
-
-
-
 
 ## SlotEventParser
 
@@ -60,6 +34,10 @@ UPDATE com.topvision.ems.epon.fault.parser.SlotEventParser  SET        
 = DEBUG
 
 
+
+## WebProxy
+
+UPDATE com.topvision.ems.cmc.webproxy.* SET       LEVEL = DEBUG
 
 
 
