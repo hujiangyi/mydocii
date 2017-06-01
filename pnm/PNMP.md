@@ -29,7 +29,7 @@ compensate for network linear distortion can buy the operator time in
 resolving the issue before there is service impact, thus enabling a proactive
 network maintenance strategy.
 
-## 5.2 Linear Impairments ##
+## 5.2 Linear Impairments
 
 In the upstream portion of the CATV network there are different types of
 impairments. These can be classified based on the impact these impairments
@@ -51,8 +51,6 @@ spectrum around 42 MHz. At this rolloff frequency, the amplitude and the phase
 suffer considerable distortion. In particular, the phase distortion is
 noticeable prior to reaching the band-edge. This phase distortion is more
 easily shown when expressed as group delay which is defined as:
-
-_GroupDelay _= − _d_φ _d_ω
 
 whereφ is the phase in radians, ω is the frequency in radians per second, and
 group delay is in seconds. Group delay is ideally constant across the band of
@@ -88,7 +86,7 @@ reflection sources are not limited to the examples presented here. For more
 information about micro-reflections, refer to the tutorial section of this
 document.
 
-#### _5.2.1.1 Micro-reflection Example 1 _
+#### 5.2.1.1 Micro-reflection Example 1 
 
 This type of commonly experienced micro-reflection is exhibited when the
 upstream signal encounters impedance mismatches somewhere in its upstream path
@@ -151,7 +149,7 @@ described in Section 6.6, Fault Localization.
 
 
 
-#### _5.2.1.2Micro-reflection Example 2 _
+#### 5.2.1.2Micro-reflection Example 2 
 
 The second type of micro-reflection may occur anywhere in the network, but its
 magnitude is most noticeable in CMs located off the highest value feeder taps.
@@ -223,7 +221,7 @@ the end of the equalizer tapped delay line.
 
 ![](PNMP.files/image004.png)
 
-#### _5.2.1.3 Micro-reflection Example 3 _
+#### 5.2.1.3 Micro-reflection Example 3 
 
 Figure 3 represents a case that is a superposition of the previous cases
 described in Micro-reflection Example 1 and Micro-reflection Example 2. A
@@ -256,7 +254,7 @@ claimed to reduce potential ingress sources. Indeed it is a tradeoff between
 craft integrity and good impedance matching practices, which causes more
 stress on the upstream adaptive equalizer.
 
-#### _5.2.1.4 Micro-Reflection Example 4 _
+#### 5.2.1.4 Micro-Reflection Example 4 
 
 Figure 4 shows a single reflection that travels from the large “X” in the
 figure toward the source (the tap or some other device beyond the left edge of
@@ -520,7 +518,7 @@ vertical line, higher order modulation may not be possible.
 
 ![](PNMP.files/image024.png)
 
-##### _Figure 11 - Pre-equalization Compensation Capabilities under Short and Long Delay Micro-reflection Scenarios _
+##### Figure 11 - Pre-equalization Compensation Capabilities under Short and Long Delay Micro-reflection Scenarios 
 
 The examples just discussed assumed 0.625” cable for the short time delay
 reflection and 1” cable for the long time delay reflection. The short time
@@ -555,14 +553,14 @@ separate MIBs for pre-equalization measurements. An additional per channel
 pre-equalization data measurement is also available and briefly discussed in
 this section to avoid confusion on usage of the appropriate information.
 
-#### _5.6.1.1 Per CM Pre-equalization _
+#### 5.6.1.1 Per CM Pre-equalization 
 
 Table 2 presents semantically identical management objects for CM and CMTS for
 both DOCSIS 2.0 and 3.0.
 
 ![](PNMP.files/image028.png)
 
-#### _5.6.1.2 Per Interface Equalization _
+#### 5.6.1.2 Per Interface Equalization 
 
 For the original RFI MIB requirements there is a per interface pre-
 equalization data element that is common for DOCSIS 2.0 and 3.0, the
@@ -886,7 +884,7 @@ coefficient energy increases in the presence of group delay distortion.
 Additional group delay details are discussed in the tutorial section (Appendix
 I).
 
-#### _6.3.12.1 Group Delay Distortion at Band-Edge with No Micro-reflection _
+#### 6.3.12.1 Group Delay Distortion at Band-Edge with No Micro-reflection 
 
 Table 4, Figure 16, and Table 5 relate to the scenario where the DOCSIS
 channel is at the band-edge and there is no micro-reflection present. Table 4
@@ -915,7 +913,7 @@ indicative that the pre-equalization compensation is effective.
 
 ![](PNMP.files/image070.png)
 
-#### _6.3.12.2 Group Delay Distortion at Band-Edge with 0.5 μs Micro-reflection _
+#### 6.3.12.2 Group Delay Distortion at Band-Edge with 0.5 μs Micro-reflection 
 
 Table 6, Figure 17, and Table 7 relate to the scenario where the DOCSIS
 channel is at the band-edge but there is also a 0.5 μs micro-reflection
@@ -942,7 +940,7 @@ MTC begins to show.
 
 ![](PNMP.files/image076.png)
 
-#### _6.3.12.3 Distortion in Middle of Upstream Band with Micro-reflection _
+#### 6.3.12.3 Distortion in Middle of Upstream Band with Micro-reflection 
 
 Table 8, Figure 18, and Table 9 relate to the scenario where the DOCSIS
 channel is operating in the middle of the upstream band with a 0.5 μs micro-
@@ -1070,7 +1068,7 @@ latency visibility to a small subset of devices. Given the expense associated
 with polling, storage and analysis, this stage should be reserved for only the
 most critical or otherwise material-interest devices.
 
-#### _6.4.2.1 Low Rate (once daily, rotating across eight-hour time-shifts, adjustable) _
+#### 6.4.2.1 Low Rate (once daily, rotating across eight-hour time-shifts, adjustable) 
 
 Modem based pre-equalization coefficient data should be collected once per
 day. It’s possible that certain plant problems might be specific to the time
@@ -1099,7 +1097,7 @@ hours is recommended.
 
 ![](PNMP.files/image084.png)
 
-#### _6.4.2.2 Medium - Rate (every four hours, adjustable) _
+#### 6.4.2.2 Medium - Rate (every four hours, adjustable) 
 
 The secondary level of analysis will require greater resources to gather,
 store, and analyze, so sizing should be done based on preliminary results of
@@ -1430,7 +1428,7 @@ x2 = 11
 y2 = 29
 
 The algorithm fits a parabola, shown in the figure as a dotted blue line, to
-the 3 taps. We assume the equation for the parabola is y = a*x^2 + b*x + c.
+the 3 taps. We assume the equation for the parabola is 
 
 The following code solves for the location of the peak of this parabola:
 
@@ -1465,7 +1463,7 @@ Planning an effective preventive maintenance program is based on historical
 practices. When an operator uses statistics such as MER (SNR), FEC, T1-T4
 timeouts, receive level and transmit power, which are all important variables
 to track over time, data is being used that would be better served in an
-active maintenance program. That being said, if the _MER _and _FEC _are bad
+active maintenance program. That being said, if the MER and FEC are bad
 then the customer has already been influenced in a negative way. If the modem
 is timing out on a range request or response, then the customer is being
 affected. If the levels are fluctuating outside the expected range of the
@@ -1519,10 +1517,10 @@ time of the day. Again, 3 dB of level change should ring alarm bells.
 ![](PNMP.files/image140.png)
 
 It is noteworthy to point out that this same approach can be applied to other
-levels like _micro-reflection _or _group delay_. _Micro-reflection _levels can
+levels like micro-reflection or group delay. Micro-reflection levels can
 be calculated by using the same formula for MTR while utilizing the equalizer
-tap values that compensate for micro-reflections _Post-MTR _(usually taps 9
-through 24). _Group delay _level is typically calculated using taps 1 through
+tap values that compensate for micro-reflections Post-MTR (usually taps 9
+through 24). Group delay level is typically calculated using taps 1 through
 7.
 
 Operators that are new to the PNM process may want to use the following
@@ -1544,7 +1542,7 @@ by this metric because there is room to improve.
 ![](PNMP.files/image144.png)
 
 Another point that operators should consider is when a modem starts using a
-more robust modulation type such as _16-QAM _because of high noise, it is a
+more robust modulation type such as 16-QAM because of high noise, it is a
 clear sign that something is broken and needs attention. However, if the
 metric doesn’t change in pace with the less demanding modulation type, a
 problem could be concealed.
@@ -1563,14 +1561,14 @@ number over time.
 CMTS or Plant Health is calculated by using the formulas on the next page.
 This is an excellent way to take large numbers of modems’ MTR values and place
 them on a scale from 1 to 10, with 10 being perfect. Since the desire is to
-identify which node or upstream interface needs attention, a _Health Index _by
+identify which node or upstream interface needs attention, a Health Index by
 node doesn’t work well because it lacks clarity with so few modems. It is
 better to flush out upstreams using an average level of MTR, micro-reflection
 or group delay. The formulas are fairly simple in that they compare the number
 of troubled modems or the total number of registered modems on the CMTS. Only
 50% of the marginal/yellow modems are used in the formula since they are not
 as damning as the critical/red modems. There are two basic spins on the
-_Health Formula _which varies by the denominator. If a modem is unable to
+Health Formula which varies by the denominator. If a modem is unable to
 produce an accurate MTR value, such as a legacy modem that doesn’t utilize
 pre-equalization, then that modem should be excluded as shown in Formula 1. On
 the other hand, if a significant number of green modems stop communicating
@@ -1832,7 +1830,7 @@ frequency response means a perfect match. A second method is simpler complex
 time-domain coefficient subtraction, followed by a restoration of the main
 tap.
 
-#### _6.7.6.1 Process: _
+#### 6.7.6.1 Process: 
 
 1.            Determine all the MAC addresses connected to a node. This can be done by connectivity records, or by examining the MAC addresses that are connected to an upstream interface.  
 
@@ -1880,7 +1878,7 @@ accidentally.
 8.Create work tickets for service technicians (or installers) with single
 homes having unmatched bad responses.
 
-#### _6.7.6.2 Frequency Domain Division Method to Determine If Two CMs’ Responses Match _
+#### 6.7.6.2 Frequency Domain Division Method to Determine If Two CMs’ Responses Match 
 
 One method that can be employed to see if two units have matching responses is
 to just “look at” or “eyeball” a plot of the complex coefficients in either in
@@ -1980,7 +1978,7 @@ Main tap is 1.0, but vertical axis is clipped at 0.2 to enhance other taps on
 linear vertical scale. MTR = 27.3 dB, so the match is excellent and both
 modems are seeing the same echo.
 
-#### _6.7.6.3 Method 2: Time Domain Subtraction Method to Determine If Two CMs’ Responses Match _
+#### 6.7.6.3 Method 2: Time Domain Subtraction Method to Determine If Two CMs’ Responses Match 
 
 This method is conceptually simpler than the frequency domain division method,
 but produces similar results.
@@ -2048,7 +2046,7 @@ MIB data and not working properly. Wrong configuration of CMs or CMTS.
 The following use cases describe how tools are used. Examples are provided in
 the following subsections.
 
-#### _6.8.1.1 Use Case 1: In or Near Home Problem Identification _
+#### 6.8.1.1 Use Case 1: In or Near Home Problem Identification 
 
 Description 
 
@@ -2323,7 +2321,7 @@ operation. This is reproducible with corrosion.
 
 ### 6.8.3 Use Cases 3-11 
 
-_Figure 45 - Effects of Ingress When Mapped _
+Figure 45 - Effects of Ingress When Mapped 
 
 1.    Plant technician trying to solve a frequency response problem with the upstream or augment system upstream sweeping. State 2.  Actors: Technician, NOC  External Event: Distortion red, other indicators yellow/green or plant sweep shows problem/anomaly  Proactive/High distortion detected Group of CMs Expected Outcome: Distortion removed  
 
@@ -2508,291 +2506,3 @@ The following summarizes several disadvantages of post-equalization.
 6.     • Generally speaking, much poorer estimate for both amplitude roll-off and group delay distortion when attempting to extract the information from a single equalized data burst for any given cable modem. 
 
 ![](PNMP.files/image186.png)
-
-# 7 PNM USING FULL BAND CAPTURE 
-
-## 7.1 Technical Description of Process 
-
-This section focuses on downstream FBC.
-
-Spectrum analyzers are specialized instruments that provide a graphical
-display of amplitude versus frequency. Figure 46 shows a typical spectrum
-analyzer display.
-
-![](PNMP.files/image188.png)
-
-Spectrum analyzers have been used by cable operators for decades for routine
-maintenance and troubleshooting. However, spectrum analyzers are expensive
-instruments, so they have not typically been widely available to field
-personnel. Technicians could only imagine having a spectrum analyzer in every
-home.
-
-FBC is a relatively new concept that takes advantage of low-cost discrete
-Fourier transform (DFT) and fast Fourier transform (FFT) technology to support
-spectrum analyzer-like functionality in customer premises equipment such as
-cable modems.
-
-Integrated spectrum analyzer-like functionality is supported by the latest
-Broadcom and MaxLinear CPE silicon. The CPE’s spectrum data can be accessed
-remotely using simple network management protocol (SNMP) or similar, allowing
-a cable operator to see where ingress or other impairments might be
-problematic. Figure 47 shows an example of FBC, in which FM and LTE ingress
-are visible.
-
-![](PNMP.files/image190.png)
-
-### 7.1.1 What Does FBC Do For Operators? 
-
-FBC can be used to remotely troubleshoot a variety of headend, outside plant,
-and subscriber drop problems. Since the spectrum analyzer-like functionality
-is integrated in the cable modem or other device, it’s much like having a
-spectrum analyzer in every home that has FBC-equipped CPE. Figure 48 shows
-examples of impairments that can be identified using FBC.
-
-![](PNMP.files/image192.png)
-
-Problems can be identified by evaluating the RF spectrum _without rolling a
-truck_. If a sufficient number of FBC-equipped devices are available in
-subscribers’ homes, it may be possible to determine the approximate location
-of the source of a given impairment. A technician can be dispatched directly
-to the suspected problem area, simplifying troubleshooting and saving time.
-
-### 7.1.2 How FBC Works 
-
-As mentioned previously, a spectrum analyzer is a device which measures the
-frequency content of an input signal. Fortunately, this is precisely what DFT
-does. Multiplying by the DFT matrix measures the correlation of the input
-signal with each row in the DFT matrix, and each row is a sine/cosine of a
-particular frequency. Thus, each output bin represents the power of the input
-signal at that frequency.
-
-![](PNMP.files/image194.png)
-
-Figure 49 shows a block diagram of a digital spectrum analyzer which may
-reside in a cable modem or CMTS. The input signal enters at the left of the
-diagram; this signal is the full upstream or downstream band of the cable
-plant. An analog front end amplifies the signal and provides RF gain control.
-A high- speed analog-to-digital converter (ADC), typically 2.5 giga-samples
-per second (Gsps) or higher, provides digital samples of the signal. A digital
-tuner, consisting of a digital oscillator and lowpass filter, selects the
-desired analysis band around a specified center frequency. The signal from the
-selected band is applied to the FFT, which multiplies the signal by the DFT
-matrix. Each bin of the FFT output comprises a complex value consisting of two
-numbers, real (I) and imaginary (Q), giving the correlation of the input
-signal with the particular frequency corresponding to a single row of the DFT
-matrix. Typically a spectrum analyzer is only concerned with the magnitude,
-not the phase, of the FFT output. So, the power (magnitude-squared) of each
-bin is computed, that is, I2 \+ Q2 for each bin. If spectrum smoothing is to
-be applied, the previously-described process is repeated with a fresh set of
-data from the same band, and the power values from several captures are
-averaged at each bin location. The smoothed bins are converted to decibels by
-taking 10*log10 of each bin power value. These decibel values, one for each
-frequency bin, are displayed as the spectrum of the input signal.
-
-Note that if the entire band is able to be processed as a single analysis
-band, the tuner shown in Figure 49 is not necessary. However, if the band is
-being analyzed in segments, then the tuner is used to step through a sequence
-of analysis segments of the band, and the individual spectrum segments are
-spliced together to produce the overall wideband spectrum.
-
-## 7.2 Field examples and screen shots 
-
-This section includes several examples of FBC screen shots as “seen” at the
-cable modem. The horizontal axis in each figure is frequency in MHz, and the
-vertical axis is in dB. Images are courtesy of Comcast.
-
-### 7.2.1 Ingress 
-
-Technicians can look at a captured spectrum display for indications of the
-presence of downstream ingress (and in some cases, direct pickup). If a
-sufficient number of FBC capable devices are available, it may be possible to
-roughly isolate the area of plant where the ingress is entering the network.
-Figure 50 shows an example of visible ingress in the FM band (left edge of
-figure) as well as in the LTE band (near the right end of the figure).
-
-![](PNMP.files/image196.png)
-
-### 7.2.2 Multiple problems 
-
-Figure 51 shows a FBC from one modem, in which multiple downstream impairments
-can be seen
-
-![](PNMP.files/image198.png)
-
-The most serious problem is the suckout (notch) visible between 697 MHz and
-731 MHz. The suckout, which is about 18 dB deep, affects a half dozen QAM
-channels. Another problem evident in the display is called adjacency, where a
-group of eight channels in the roughly 600 MHz to 650 MHz range are several dB
-higher than other channels in that part of the spectrum, likely caused by
-incorrect narrowcast injection levels. A third problem is a QAM channel near
-563 MHz that is a few dB lower than the adjacent channels. A fourth problem
-also is level-related, in the vicinity of 250 MHz.
-
-### 7.2.3 Displaying Multiple Modems 
-
-It is possible to simultaneously display an overlay of spectrum data from
-multiple cable modems - say, modems in the same neighborhood. Figure 52
-illustrates this.
-
-![](PNMP.files/image200.png)
-
-Standing waves, also known as amplitude ripple, are caused by impedance
-mismatches in the RF signal path. Standing waves are usually easy to see in a
-FBC display. Figure 53 shows several examples of standing waves. Of particular
-interest is the combination of two standing waves in the lower right screen
-shot.
-
-![](PNMP.files/image202.png)
-
-### 7.2.4 Presence of filters 
-
-Figure 54 includes two examples where filters are present in subscriber drops.
-The upper trace in the figure shows the effects of a bandstop filter (an
-adjacency problem is visible at two locations in the
-
-![](PNMP.files/image204.png)
-
-### 7.2.5 Rolloff 
-
-Rolloff is a non-flat loss of signal level-versus-frequency at or near the
-lower or upper end of the RF spectrum. When rolloff occurs at the upper end of
-the downstream spectrum, the cause can be active device misalignment, active
-or passive device damage, presence of older cable or equipment in the network
-designed for a lower upper frequency limit than the network’s existing
-operating frequency range, and so on. Figure 55 shows examples of rolloff at
-the upper end of the downstream spectrum.
-
-![](PNMP.files/image206.png)
-
-### 7.2.6 Tilt 
-
-_Figure 55 - Rolloff at the Upper End of the Downstream Spectrum _
-
-Tilt describes the condition where signal levels vary from low to high in a
-more or less linear manner as frequency increases (positive tilt), or from
-high to low in a linear manner as frequency increases (negative tilt).
-Depending on the location in the plant, tilt may be desirable - for example,
-at the output of an amplifier. Ideally the frequency response at the input to
-CPE should be flat, but in some cases the response may be tilted excessively
-for a variety of reasons. Figure 56 shows examples of negative and positive
-tilt.
-
-![](PNMP.files/image208.png)
-
-### 7.2.7 Resonant Peaking 
-
-Resonant peaking affects a relatively narrow frequency range, typically no
-more than a handful of channels. The peaking can exist anywhere in the
-spectrum, and typically occurs in an active or passive device. Vibration and
-temperature changes may affect the nature of the peak: The response peak can
-be intermittent, change in level and/or shape, and move around in frequency.
-Examples of causes include defective components, cold solder joints, loose
-modules (or module covers), loose or missing screws, and so forth. Figure 57
-highlights examples of resonant peaking.
-
-![](PNMP.files/image210.png)
-
-### 7.2.8 Making It Work 
-
-#### _7.2.8.1 How to Capture Data from Devices Equipped with FBC Functionality _
-
-_7.2.8.1.1 Design Considerations _
-
-Capturing spectrum information requires SNMP read/write access to the cable
-modems, which generally are on RFC 1918 address space. This means that direct
-access from a workstation is unlikely. In general, implementations will
-consist of a server (or servers) that has access to the non-routable IP
-addresses used by the modems, and has an external IP address or a static
-network address translation (NAT) that allows external clients access to it so
-that the server can make the SNMP requests on behalf of the clients. The
-clients could be web based, mobile, or desktop software. An operator likely
-will already have one or more OSS servers that fits these requirements, but
-the existing servers may or may not have sufficient capacity for the
-additional load. Additionally, the implementation of FBC will be done for a
-somewhat different operational group - and in many cases a different
-department -- than the primary OSS users, since field technicians are going to
-be much more likely to use this data than some of the other normal OSS tools.
-A good exercise is taking a look at how field technicians currently use their
-hand held meters, as well as thinking about other uses for a remote spectrum
-display that aren't practical today.
-
-There are several considerations that development teams need to understand
-before getting started. Security is a large issue for this kind of system,
-because it is necessary to perform SNMP SET operations to enable the capture,
-and have access to parts of the network that aren't normally reachable. Some
-sort of server side authentication system should be used to ensure that only
-authorized users can access and use the server. In some cases the FBC requests
-will be coming from devices over untrusted networks, such as field technicians
-using tablets or smart phones. This could be resolved by requiring virtual
-private network (VPN) connections before allowing usage, or with strong
-authentication coupled with transport layer security (TLS) or other
-encryption. Locking and session management are also needed, because having
-multiple users trying to perform a capture on the same device can cause issues
-for that device. Other multiple user issues could occur if the device changes
-frequency or some other variable in response to one user while another is
-trying to interpret results for a different setting. An important
-consideration is how to deal with the data. In general, a maximum granularity
-capture across the widest window will generate a 10-20 kbps stream of data. By
-itself this isn't a large data stream, but it does mean that it's not
-practical for most organizations to collect this data for all modems and then
-store the information in a database for analysis the way that is typically
-done for OSS functions. If a user is only going to work on a real time display
-then this consideration isn't particularly problematic, but if the data is for
-proactive analytics then it's a large challenge.
-
-## 7.3 Method to Find a Time Response from an IFFT when Phase Data is Not Available 
-
-The FBC is used by cable modems and set-top boxes to provide magnitude-only
-spectral data about RF path conditions in a remote location, such as a home.
-In some cases, the downstream channels being monitored are digital channels,
-such as 64- or 256-QAM. In other cases the signals are analog signals or noise
-and ingress.
-
-This method applies to blocks of QAM signals to identify the existence of an
-echo tunnel that causes ripple in the frequency response. See `
-
-### 7.3.1 Method: 
-
-26.         Pick a block of averaged (smoothed) contiguous digital signals, as many as possible. For example, each 7.5 MHz block of frequency domain data may have 256 spectral components, and multiple blocks are pasted together to make a wide spectral response.  
-
-27.         Extract samples from the lower band edge of the lowest QAM signal to the upper band edge of the highest QAM signal, and convert the values into linear values. Use these values as I (in-phase) components.  
-
-28.         Use zeroes for all Q (quadrature) values.  
-
-29.         If necessary zero-pad the values to fill out a 2^n IFFT transform, such as 16,384 or 4096.  
-
-30.         Optionally, a window should be applied to the data.  
-
-31.         A frequency region with another signal, such as an analog RF carrier, or vacant band can be filled  in with a straight line connecting the channel just above the vacant band to the channel just below  the vacant band.  
-
-32.         Perform an IFFT to put the data into the time domain.  
-
-33.         Transformed data will be symmetrical due to not providing quadrature values. You can discard the  image.  
-
-34.         A DC term will be present. Comb teeth will be present every 166.67 ns due to the notch between 6  MHz channels.  
-
-35.         If there is an echo in the frequency response, there will be a ripple in the frequency domain. The  ripple will linearly transform to an impulse located among the comb teeth. If the echo is an exact multiple of 166.67 ns, it cannot as easily be observed. The delay between the main impulse and echo is the round trip time of an echo tunnel, corrected for velocity of prorogation velocity of cable. Since you know the shape of the teeth on the comb, they can be removed by subtraction.  
-
-This method is valuable because the wide bandwidth of the multiple QAM signals
-makes for exceedingly accurate time resolution, so the cable operator makes a
-hole to repair a buried cable, not a trench.
-
-Another anticipated method to remove effect of the notches between carriers is
-to interpolate over the notches. Yet another method to reduce the effect of
-the notches is to equalize the magnitude response, but equalization cannot go
-all the way to zero due to negligible energy in the notch.
-
-This method could also work with analog spectrum analyzers, for example, using
-GPIB or other interface technology supported by the analyzer to extract the
-magnitude data.
-
-Note that it should not work to detect group delay problems, since there is no
-phase information available.
-
-The code to do this is in the CableLabs Spectrum Impairment Detector (SID)
-which is in the PNM repository.
-
-![](PNMP.files/image212.png)
-
-![](PNMP.files/image214.png)
-
