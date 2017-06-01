@@ -1,6 +1,6 @@
-**5 PNM USING UPSTREAM EQUALIZATION **
+# 5 PNM USING UPSTREAM EQUALIZATION 
 
-**5.1 Reactive versus Proactive Network Maintenance **
+## 5.1 Reactive versus Proactive Network Maintenance
 
 In this document, the definition of reactive network maintenance is a
 stringent one and, in the era of multimedia, business and advanced services,
@@ -29,7 +29,7 @@ compensate for network linear distortion can buy the operator time in
 resolving the issue before there is service impact, thus enabling a proactive
 network maintenance strategy.
 
-**5.2 Linear Impairments **
+## 5.2 Linear Impairments ##
 
 In the upstream portion of the CATV network there are different types of
 impairments. These can be classified based on the impact these impairments
@@ -74,7 +74,7 @@ are considered additive impairments, although if an impairment such as impulse
 noise is high enough to cause laser clipping, it can be considered nonlinear
 in nature too.
 
-**5.2.1 Micro-reflection Types **
+### 5.2.1 Micro-reflection Types 
 
 The following sections describe multiple scenarios in which micro-reflections
 may be generated within the HFC network. Micro-reflection Example 1 describes
@@ -88,7 +88,7 @@ reflection sources are not limited to the examples presented here. For more
 information about micro-reflections, refer to the tutorial section of this
 document.
 
-**_5.2.1.1 Micro-reflection Example 1 _**
+#### _5.2.1.1 Micro-reflection Example 1 _
 
 This type of commonly experienced micro-reflection is exhibited when the
 upstream signal encounters impedance mismatches somewhere in its upstream path
@@ -151,7 +151,7 @@ described in Section 6.6, Fault Localization.
 
 
 
-**_5.2.1.2Micro-reflection Example 2 _**
+#### _5.2.1.2Micro-reflection Example 2 _
 
 The second type of micro-reflection may occur anywhere in the network, but its
 magnitude is most noticeable in CMs located off the highest value feeder taps.
@@ -223,7 +223,7 @@ the end of the equalizer tapped delay line.
 
 ![](PNMP.files/image004.png)
 
-**_5.2.1.3 Micro-reflection Example 3 _**
+#### _5.2.1.3 Micro-reflection Example 3 _
 
 Figure 3 represents a case that is a superposition of the previous cases
 described in Micro-reflection Example 1 and Micro-reflection Example 2. A
@@ -256,7 +256,7 @@ claimed to reduce potential ingress sources. Indeed it is a tradeoff between
 craft integrity and good impedance matching practices, which causes more
 stress on the upstream adaptive equalizer.
 
-**_5.2.1.4 Micro-Reflection Example 4 _**
+#### _5.2.1.4 Micro-Reflection Example 4 _
 
 Figure 4 shows a single reflection that travels from the large “X” in the
 figure toward the source (the tap or some other device beyond the left edge of
@@ -279,7 +279,7 @@ discussion of this type of detection.
 
 ![](PNMP.files/image008.png)
 
-**5.3 Pre-equalization Mechanism Enabled through DOCSIS Ranging **
+## 5.3 Pre-equalization Mechanism Enabled through DOCSIS Ranging 
 
 The upstream pre-equalization mechanism relies on the interactions of the
 DOCSIS ranging process in order to determine and adjust the CM pre-
@@ -332,7 +332,7 @@ value. This represents a Kronecker delta or impulse function, and any data set
 convolved with an impulse results in the original data set, which in this case
 is the CM pre-equalization coefficients, unchanged.
 
-**5.3.1 Pre-equalization Enabling Messages **
+### 5.3.1 Pre-equalization Enabling Messages 
 
 As described previously, the two messages that are key in the ranging process
 are the range response (RNG-RSP) and range request (RNG-REQ) messages. The
@@ -367,7 +367,7 @@ Figure 8 shows the structure of the RNG-REQ message.
 
 ![](PNMP.files/image016.png)
 
-**5.3.2 CM and CMTS Equalization Information **
+### 5.3.2 CM and CMTS Equalization Information 
 
 The pre-equalization coefficients are loaded into the adaptive pre-equalizer
 in the CM, which is used to compensate for upstream linear distortion(s).
@@ -407,7 +407,7 @@ it. These scenarios are rare in current HFC architectures, but if this does
 occur, one must be aware that an impairment identification process using only
 CM pre-equalization data will not yield accurate results.
 
-**5.4 Upstream Pre-equalization in DOCSIS 1.0, DOCSIS 1.1 and DOCSIS 2.0 **
+## 5.4 Upstream Pre-equalization in DOCSIS 1.0, DOCSIS 1.1 and DOCSIS 2.0 
 
 Upstream pre-equalization in DOCSIS 1.0 was left as optional and the
 equalization process between CMTS and CM was not defined in sufficient detail.
@@ -425,7 +425,7 @@ firmware that corrects this issue. Unfortunately it has not been possible to
 correct this issue on all affected CMs. To support reliable use of upstream
 pre-equalization, operators have been replacing 1.0 CMs having known issues.
 
-**5.4.1 DOCSIS 1.1 Pre-equalization Considerations **
+### 5.4.1 DOCSIS 1.1 Pre-equalization Considerations 
 
 The percentage of DOCSIS 1.1 CMs deployed is still significant enough not to
 take advantage of the pre- equalization compensation. Nevertheless, based on
@@ -433,7 +433,7 @@ the percentage of 1.1 CM population and the rate at which 1.1 CM versions are
 decreasing with time, it is important to determine at what point the
 procedures described in this documentation will be worthwhile to implement.
 
-**5.5 Limitations on Pre-equalization Compensation **
+## 5.5 Limitations on Pre-equalization Compensation 
 
 In a scenario of an upstream path that exhibits a micro-reflection, the
 maximum delay compensation that can be achieved using pre-equalization is
@@ -520,7 +520,7 @@ vertical line, higher order modulation may not be possible.
 
 ![](PNMP.files/image024.png)
 
-**_Figure 11 - Pre-equalization Compensation Capabilities under Short and Long Delay Micro-reflection Scenarios _**
+##### _Figure 11 - Pre-equalization Compensation Capabilities under Short and Long Delay Micro-reflection Scenarios _
 
 The examples just discussed assumed 0.625” cable for the short time delay
 reflection and 1” cable for the long time delay reflection. The short time
@@ -528,7 +528,7 @@ delay reflection scenario includes data points at 150’, 300’, and 600’ rou
 trip distances and the long time delay reflection includes data points at
 2400’, 2700’, and 3000’.
 
-**5.6 DOCSIS Pre-equalization MIBs **
+## 5.6 DOCSIS Pre-equalization MIBs 
 
 DOCSIS pre-equalization coefficients indicate different things depending
 whether the CMTS or the CM is being queried. The information that is available
@@ -544,7 +544,7 @@ The MIB format is as follows:
 
 ![](PNMP.files/image026.png)
 
-**5.6.1 DOCSIS 2.0 and 3.0 Pre-equalization MIBs **
+### 5.6.1 DOCSIS 2.0 and 3.0 Pre-equalization MIBs 
 
 Pre-equalization data is relevant in CM-CMTS channel combinations. In DOCSIS
 2.0 the CM supports a single upstream channel, meaning the CM and CMTS reports
@@ -555,14 +555,14 @@ separate MIBs for pre-equalization measurements. An additional per channel
 pre-equalization data measurement is also available and briefly discussed in
 this section to avoid confusion on usage of the appropriate information.
 
-**_5.6.1.1 Per CM Pre-equalization _**
+#### _5.6.1.1 Per CM Pre-equalization _
 
 Table 2 presents semantically identical management objects for CM and CMTS for
 both DOCSIS 2.0 and 3.0.
 
 ![](PNMP.files/image028.png)
 
-**_5.6.1.2 Per Interface Equalization _**
+#### _5.6.1.2 Per Interface Equalization _
 
 For the original RFI MIB requirements there is a per interface pre-
 equalization data element that is common for DOCSIS 2.0 and 3.0, the
@@ -590,9 +590,9 @@ clarifies the CMTS does not need to report a value other than an empty string.
 Note that this equalization data is not relevant to the scope of this
 document.
 
-**6 METHODOLOGY FOR PNM USING UPSTREAM EQUALIZATION **
+# 6 METHODOLOGY FOR PNM USING UPSTREAM EQUALIZATION 
 
-**6.1 General Approach and Processes **
+## 6.1 General Approach and Processes 
 
 The proactive network maintenance methodology that is based on pre-
 equalization coefficients can be described in terms of a few key general
@@ -638,7 +638,7 @@ Figure 13 shows a diagram of the process just described.
 
 ![](PNMP.files/image030.png)
 
-**6.2 Format Verification, Normalization and Guidelines **
+## 6.2 Format Verification, Normalization and Guidelines 
 
 The structure of the pre-equalization information has been described in
 Section 5.6. How the values within this structure are interpreted depends on
@@ -672,7 +672,7 @@ Regarding maximum amplitude, CMs have maximum amplitude equal to 2047, 1023 or
 coefficient amplitude turns into a difference in granularity. The difference
 then becomes one of decoding interpretation of coefficients.
 
-**6.2.1 Four Nibble 2’s Complement Pre-equalization Coefficient Representation **
+### 6.2.1 Four Nibble 2’s Complement Pre-equalization Coefficient Representation 
 
 In this real or imaginary coefficient representation the entire four nibbles
 (two bytes) are used. This means that if the first bit is 0 the rest of the
@@ -685,7 +685,7 @@ a) 000D = 0000 0000 0000 1101 = 13 b) FFFE = 1111 1111 1111 1110 after
 inverting it and adding 1 → 0000 0000 0000 0001 + 1 = 0000 0000 0000 0010 = 2
 → The number is - 2
 
-**6.2.2 Three Nibble 2’s Complement Pre-equalization Coefficient Representation **
+### 6.2.2 Three Nibble 2’s Complement Pre-equalization Coefficient Representation 
 
 In this real or imaginary coefficient representation the last three nibbles
 out of the two coefficient bytes are used for the calculation. In this
@@ -704,20 +704,20 @@ a) 000D = 0000 0000 0000 1101 → eliminate the first nibble → 0000 0000 1101 
 b) 0FFE = 0000 1111 1111 1110 → eliminate the first nibble → 1111 1111 1110
 afterinvertingitandadding1→ 000000000001+1=000000000010 =2→Thenumberis-2
 
-**6.2.3 Universal Decoding **
+### 6.2.3 Universal Decoding 
 
 Since in current implementations the maximum value that a coefficient can take
 is always less than or equal 2047, the first nibble is never used and can be
 removed to generate a universal decoder. After removing the first nibble, the
 decoding process would be identical to the third nibble process.
 
-**6.3 Key Metrics **
+## 6.3 Key Metrics 
 
 The real and imaginary complex coefficients of a DOCSIS 2.0 upstream pre-
 equalizer defined as: F1R, F1I, F2R, F2I, F3R, F3I, F4R, F4I,. . . F23R, F23I,
 F24R, F24I, and will be used to define several key metrics that follow.
 
-**6.3.1 Adaptive Equalizer Main Tap Energy **
+### 6.3.1 Adaptive Equalizer Main Tap Energy 
 
 The adaptive equalizer main tap in DOCSIS 2.0 is typically in tap position
 eight although some CMTS implementations can have it in as low as the sixth
@@ -729,7 +729,7 @@ The main tap energy (MTE), assuming it in eighth position, is defined as:
 
 ![](PNMP.files/image038.png)
 
-**6.3.2 Main Tap Nominal Energy and Main Tap Nominal Amplitude **
+### 6.3.2 Main Tap Nominal Energy and Main Tap Nominal Amplitude 
 
 The DOCSIS pre-equalization taps exhibit different nominal or maximum
 amplitudes depending on CM implementations. The maximum of amplitude
@@ -742,7 +742,7 @@ position, is defined as:
 
 ![](PNMP.files/image040.png)
 
-**6.3.3 Pre-Main Tap Energy**
+### 6.3.3 Pre-Main Tap Energy
 
 The summation of the energy in all equalizer taps prior to the main tap
 provides the pre-main tap energy
@@ -752,7 +752,7 @@ is defined as:
 
 ![](PNMP.files/image042.png)
 
-**6.3.4 Post-Main Tap Energy **
+### 6.3.4 Post-Main Tap Energy 
 
 The summation of the energy in all equalizer taps after the main tap provides
 the post-main tap energy (PostMTE).
@@ -762,14 +762,14 @@ as:
 
 ![](PNMP.files/image044.png)
 
-**6.3.5 Total Tap Energy **
+### 6.3.5 Total Tap Energy 
 
 The summation of the energy in all equalizer taps provides the total tap
 energy (TTE). The total tap energy is defined as:
 
 ![](PNMP.files/image046.png)
 
-**6.3.6 Main Tap Compression **
+### 6.3.6 Main Tap Compression 
 
 Adaptive equalizer main tap compression (MTC) at the CM is a good indicator of
 the available margin for the continued reliance on the equalization
@@ -789,7 +789,7 @@ Main tap compression at the CMTS is not expected under normal operating
 conditions. Any level of main tap compression at the CMTS should raise an
 alarm.
 
-**6.3.7 Main Tap Ratio **
+### 6.3.7 Main Tap Ratio 
 
 Adaptive equalizer main tap ratio (MTR), the ratio of energy in the main tap
 to the energy in all other taps combined, is useful distortion metric to
@@ -802,7 +802,7 @@ NMTER.
 
 ![](PNMP.files/image052.png)
 
-**6.3.8 Non-Main Tap to Total Energy Ratio (Distortion Metric) **
+### 6.3.8 Non-Main Tap to Total Energy Ratio (Distortion Metric) 
 
 The adaptive equalizer’s non-main tap to total energy ratio is another useful
 “distortion metric” to determine the distortion level in the upstream path.
@@ -831,7 +831,7 @@ useful in determining thresholds from the NMTER values. An operator could
 assume an immediate action (red) NMTER threshold of -27 dB for 64-QAM
 operation and a monitor more frequently (yellow) NMTER threshold of -30 dB.
 
-**6.3.9 Pre-Main Tap to Total Energy Ratio **
+### 6.3.9 Pre-Main Tap to Total Energy Ratio 
 
 The adaptive equalizer’s pre-main tap to total energy ratio (PreMTTER) is a
 useful parameter, along with the adaptive equalizer’s pre-post tap symmetry,
@@ -842,7 +842,7 @@ The pre-main tap to total energy ratio expressed in dB is defined as:
 
 ![](PNMP.files/image056.png)
 
-**6.3.10 Post-Main Tap to Total Energy Ratio **
+### 6.3.10 Post-Main Tap to Total Energy Ratio 
 
 The adaptive equalizer’s post-main tap to total energy ratio (PostMTTER) is a
 useful parameter to assess micro-reflection impairment contribution. This
@@ -853,7 +853,7 @@ The post-main tap to total energy ratio expressed in dB is defined as:
 
 ![](PNMP.files/image058.png)
 
-**6.3.11 Pre-Post Energy Symmetry Ratio **
+### 6.3.11 Pre-Post Energy Symmetry Ratio 
 
 The pre-post energy symmetry ratio (PPESR), along with pre-main tap to total
 energy ratio, is a useful parameter to indicate the presence of group delay in
@@ -870,7 +870,7 @@ ratio (PPTSR):
 
 ![](PNMP.files/image062.png)
 
-**6.3.12 Group Delay Distortion **
+### 6.3.12 Group Delay Distortion 
 
 Group delay distortion is a type of linear distortion that is also corrected
 by the pre-equalization process. Figure 15 shows group delay increase with
@@ -886,7 +886,7 @@ coefficient energy increases in the presence of group delay distortion.
 Additional group delay details are discussed in the tutorial section (Appendix
 I).
 
-**_6.3.12.1 Group Delay Distortion at Band-Edge with No Micro-reflection _**
+#### _6.3.12.1 Group Delay Distortion at Band-Edge with No Micro-reflection _
 
 Table 4, Figure 16, and Table 5 relate to the scenario where the DOCSIS
 channel is at the band-edge and there is no micro-reflection present. Table 4
@@ -915,7 +915,7 @@ indicative that the pre-equalization compensation is effective.
 
 ![](PNMP.files/image070.png)
 
-**_6.3.12.2 Group Delay Distortion at Band-Edge with 0.5 μs Micro-reflection _**
+#### _6.3.12.2 Group Delay Distortion at Band-Edge with 0.5 μs Micro-reflection _
 
 Table 6, Figure 17, and Table 7 relate to the scenario where the DOCSIS
 channel is at the band-edge but there is also a 0.5 μs micro-reflection
@@ -942,7 +942,7 @@ MTC begins to show.
 
 ![](PNMP.files/image076.png)
 
-**_6.3.12.3 Distortion in Middle of Upstream Band with Micro-reflection _**
+#### _6.3.12.3 Distortion in Middle of Upstream Band with Micro-reflection _
 
 Table 8, Figure 18, and Table 9 relate to the scenario where the DOCSIS
 channel is operating in the middle of the upstream band with a 0.5 μs micro-
@@ -976,7 +976,7 @@ effectiveness.
 
 ![](PNMP.files/image082.png)
 
-**6.4 DOCSIS Pre-equalization Coefficient Data Collection **
+## 6.4 DOCSIS Pre-equalization Coefficient Data Collection 
 
 DOCSIS pre-equalization coefficient information is obtained by using simple
 network management protocol (SNMP). The SNMP management information base (MIB)
@@ -1002,7 +1002,7 @@ elements may already be available as a result of pre-existing monitoring
 systems. One should extend or reuse existing data as opposed to over-polling
 the modems or CMTS.
 
-**6.4.1 SNMP Implementation and Performance Considerations **
+### 6.4.1 SNMP Implementation and Performance Considerations 
 
 Large SNMP implementations can represent unique challenges when scale is
 considered. First, assuming DOCSIS 2.0 pre-equalization coefficients and their
@@ -1017,21 +1017,21 @@ bytes.
 
 Example:
 
-**docsIfCmStatusEqualizationData **(299 bytes character storage, 100 bytes binary storage) 
+docsIfCmStatusEqualizationData (299 bytes character storage, 100 bytes binary storage) 
 
 08 01 18 00 00 04 ff fd ff fb ff fa ff fd ff fd 00 07 00 04 ff f8 00 00 00 17
 ff ff ff d6 ff e8 07 f7 ff f9 ff 8a ff 94 ff f7 00 28 00 11 ff ec ff f7 00 19
 00 06 ff f5 ff fc ff ff 00 0d ff fb 00 01 00 01 00 04 00 04 ff f6 00 07 00 07
 ff fb 00 00 00 08 ff ff ff fe 00 00 00 04 ff fc ff ff 00 08 00 00
 
-**docsIfCmtsCmStatusEqualizationData **(299 bytes character storage, 100 bytes binary storage) 
+docsIfCmtsCmStatusEqualizationData (299 bytes character storage, 100 bytes binary storage) 
 
 08 01 18 00 FF C8 FF F0 FF F8 FF E8 FF C0 00 20 FF F8 00 38 FF C8 FF D8 00 18
 00 18 00 38 FF F0 3F 20 00 00 00 08 00 40 FF D8 FF E8 00 38 FF D0 FF D8 FF B8
 00 08 FF D8 00 40 00 40 FF E8 00 00 00 00 FF C0 00 48 00 20 00 20 00 58 00 10
 FF F0 00 00 FF E8 FF F0 FF D8 00 50 00 00 FF D8 FF F0 00 18 FF E8
 
-**UpstreamFrequency **(8 bytes character storage, 4 bytes binary storage) 29300000 **UpstreamWidth **(8 bytes character storage, 4 bytes binary storage) 6400000 
+UpstreamFrequency (8 bytes character storage, 4 bytes binary storage) 29300000 UpstreamWidth (8 bytes character storage, 4 bytes binary storage) 6400000 
 
 A payload of 614 bytes with a million devices translates to nearly 600
 megabytes. At 5 million devices, a single poll represents almost 3 gigabytes.
@@ -1053,7 +1053,7 @@ sensitive polling approach might be considered. Also, market specific
 maintenance windows may be among the factors to consider in polling cycle
 timing.
 
-**6.4.2 Data Collection Strategy **
+### 6.4.2 Data Collection Strategy 
 
 Initially, three polling rates are discussed to accommodate different levels
 of analysis. First, a low-rate cycle should be used to acquire a daily
@@ -1070,7 +1070,7 @@ latency visibility to a small subset of devices. Given the expense associated
 with polling, storage and analysis, this stage should be reserved for only the
 most critical or otherwise material-interest devices.
 
-**_6.4.2.1 Low Rate (once daily, rotating across eight-hour time-shifts, adjustable) _**
+#### _6.4.2.1 Low Rate (once daily, rotating across eight-hour time-shifts, adjustable) _
 
 Modem based pre-equalization coefficient data should be collected once per
 day. It’s possible that certain plant problems might be specific to the time
@@ -1099,7 +1099,7 @@ hours is recommended.
 
 ![](PNMP.files/image084.png)
 
-**_6.4.2.2 Medium - Rate (every four hours, adjustable) _**
+#### _6.4.2.2 Medium - Rate (every four hours, adjustable) _
 
 The secondary level of analysis will require greater resources to gather,
 store, and analyze, so sizing should be done based on preliminary results of
@@ -1118,7 +1118,8 @@ time troubleshooting or field analysis. In general, there will be limits
 placed on high-rate entries which automatically expire in a designated period
 of time
 
-**6.5 Calibration Mechanisms ****6.5.1 CMTS-CM Short Reference Plant **
+## 6.5 Calibration Mechanisms 
+### 6.5.1 CMTS-CM Short Reference Plant 
 
 Improved accuracy may be achieved by subtracting the contributions of the CMTS
 and cable modem(s) from the end-to-end channel response, leaving just the
@@ -1150,7 +1151,7 @@ cable lengths shown in Figure 19\.
 
 ![](PNMP.files/image090.png)
 
-**6.5.2 Pre-equalization Calibration Approach **
+### 6.5.2 Pre-equalization Calibration Approach 
 
 The pre-equalization process between CMTS and CM compensates not only for the
 distortion that occurs in the plant, but also for any existing distortion that
@@ -1261,7 +1262,7 @@ scenario. This calibrated response is shown in blue in Figure 22.
 Averaging ΔF and ΔA values is no longer necessary since the calibrated
 response is fairly even across the frequency range under observation.
 
-**6.6 Fault Localization **
+## 6.6 Fault Localization 
 
 The process of fault detection and localization relies on monitoring the
 network for general plant-wide or neighborhood-localized problems as well as
@@ -1305,7 +1306,7 @@ of the network that exhibits the impairment.
 
 ![](PNMP.files/image120.png)
 
-**6.6.1 Fault Localization Examples **
+### 6.6.1 Fault Localization Examples 
 
 This section details basic examples of fault location based on micro-
 reflection signatures. Data from a 6.4 MHz DOCSIS channel on a single fiber
@@ -1320,7 +1321,7 @@ this node which lead to few scenarios for evaluations as well as few
 High penetration of CMs narrows the potential problem area where the leading
 edge of the micro-reflection can be located.
 
-**6.6.2 Determining Micro-reflection Signatures **
+### 6.6.2 Determining Micro-reflection Signatures 
 
 A micro-reflection signature consists of a pair of characterizing elements,
 the relative level of the reflected signal compared to the main signal and its
@@ -1363,7 +1364,7 @@ delay and it is expressed as 2T where T is the inverse of the symbol period.
 That means the distance between the two reflectors is calculated based on half
 the delay. Delay below the "no action required" threshold is not relevant.
 
-**6.6.3 Determining Micro-reflection Boundaries Edges **
+### 6.6.3 Determining Micro-reflection Boundaries Edges 
 
 For the relevant micro-reflections cases A and B, the next steps consist of
 performing the localization within the HFC plant topology.
@@ -1391,7 +1392,7 @@ reflection. For example, fewer CMs reporting pre-equalization data or few
 customers in the fiber node branch will reduce the possibility to accurately
 estimating the location of the micro-reflection.
 
-**6.6.4 Parabolic Interpolation **
+### 6.6.4 Parabolic Interpolation 
 
 In most cases the actual time delay of an echo does not land directly on the
 delay of a tap in the pre- equalizer. Rather, the echo may occur at a delay
@@ -1444,7 +1445,7 @@ following outputs:
 
 ![](PNMP.files/image138.png)
 
-**6.7 Severity Assessment **
+## 6.7 Severity Assessment 
 
 The goal of any operator’s service department is to be invisible to its
 customers’ experience. Too often leaders have reviewed post mortem reports
@@ -1645,7 +1646,7 @@ an amplitude ripple of 2.2 dB and a -25 dBc micro-reflection results in an
 amplitude ripple of 1 dB. See Micro-reflection Calculator in Appendix IV for
 more information on converting ripple to relative micro-reflection levels.
 
-**6.7.1 Initial CM Selection for Analysis **
+### 6.7.1 Initial CM Selection for Analysis 
 
 It is assumed that the monitoring strategy combines a standard measurement
 interval (MIntSTD) to monitor all CMs in the network with a frequent
@@ -1666,7 +1667,7 @@ follows that the CM pre-equalization coefficients have already been analyzed
 and manipulated, and distinct micro- reflection amplitude and delay signatures
 have been obtained.
 
-**6.7.2 Severity Analysis Strategy for Static or Single Data Point Scenario **
+### 6.7.2 Severity Analysis Strategy for Static or Single Data Point Scenario 
 
 In a static environment where no change of pre-equalization data is assumed,
 or when there is only one data point and not able to determine change, a
@@ -1687,7 +1688,7 @@ analysis is conducted for CMs that are already in the yellow category from a
 static perspective, the time dependent severity classifications only have to
 define a red classification criteria.
 
-**6.7.3 Severity Analysis Strategy for Trending **
+### 6.7.3 Severity Analysis Strategy for Trending 
 
 If, for example, an analysis resulted in a single micro-reflection with a
 signature of -22.2 dBc in amplitude and 0.5 μs delay, it would fall into the
@@ -1738,7 +1739,7 @@ region.
 
 ![](PNMP.files/image156.png)
 
-**6.7.4 Severity Analysis Strategy for Intermittent Issues **
+### 6.7.4 Severity Analysis Strategy for Intermittent Issues 
 
 Another time-related behavior of adaptive equalizer coefficients operators may
 observe is the rapid change of micro-reflection amplitude. This intermittent
@@ -1782,7 +1783,7 @@ previous information is correlated with the number of CMs affected by a
 particular impairment. The analysis used to determine fault location can also
 be used to determine how many users will be impacted.
 
-**6.7.5 Grouping Similar Responses (Signature Matching) **
+### 6.7.5 Grouping Similar Responses (Signature Matching) 
 
 In many instances a single plant impairment will simultaneously affect
 multiple cable modems. The affected modems will exhibit the same or similar
@@ -1802,7 +1803,7 @@ and so forth.
 
 ![](PNMP.files/image162.png)
 
-**6.7.6 Upstream Equalizer Response Matching Procedure **
+### 6.7.6 Upstream Equalizer Response Matching Procedure 
 
 It is important to determine a number of cable modems in a node that are using
 a same common echo solution to discover a location of a plant impairment that
@@ -1831,7 +1832,7 @@ frequency response means a perfect match. A second method is simpler complex
 time-domain coefficient subtraction, followed by a restoration of the main
 tap.
 
-**_6.7.6.1 Process: _**
+#### _6.7.6.1 Process: _
 
 1.            Determine all the MAC addresses connected to a node. This can be done by connectivity records, or by examining the MAC addresses that are connected to an upstream interface.  
 
@@ -1879,7 +1880,7 @@ accidentally.
 8.Create work tickets for service technicians (or installers) with single
 homes having unmatched bad responses.
 
-**_6.7.6.2 Frequency Domain Division Method to Determine If Two CMs’ Responses Match _**
+#### _6.7.6.2 Frequency Domain Division Method to Determine If Two CMs’ Responses Match _
 
 One method that can be employed to see if two units have matching responses is
 to just “look at” or “eyeball” a plot of the complex coefficients in either in
@@ -1900,7 +1901,7 @@ This method is essentially a calibration process, with the denominator unit
 being used as a reference value. De-convolution is a standard Matlab function,
 and is most efficiently performed in the FD.
 
-**Example: **
+Example: 
 
 Assume the 24 coefficients from the MIB (time values) are zero-padded out to
 32 and converted with a FFT, giving 32 frequency domain points.
@@ -1971,7 +1972,7 @@ linear vertical scale. MTR = 14.09 dB
 
 ![](PNMP.files/image174.png)
 
-**NOTE: **Because CM A and CM B are experiencing the same echo, the quotient set is relatively flat. 
+NOTE: Because CM A and CM B are experiencing the same echo, the quotient set is relatively flat. 
 
 ![](PNMP.files/image176.png)
 
@@ -1979,7 +1980,7 @@ Main tap is 1.0, but vertical axis is clipped at 0.2 to enhance other taps on
 linear vertical scale. MTR = 27.3 dB, so the match is excellent and both
 modems are seeing the same echo.
 
-**_6.7.6.3 Method 2: Time Domain Subtraction Method to Determine If Two CMs’ Responses Match _**
+#### _6.7.6.3 Method 2: Time Domain Subtraction Method to Determine If Two CMs’ Responses Match _
 
 This method is conceptually simpler than the frequency domain division method,
 but produces similar results.
@@ -2010,7 +2011,7 @@ just under 1.0.
 
 Compute the MTR of the difference with a restored main tap.
 
-**Use Case Examples for Adaptive Equalizer Coefficients **
+Use Case Examples for Adaptive Equalizer Coefficients 
 
 The following four listed states describe the condition of the plant and the
 performance of the measurement devices for different scenarios operators may
@@ -2042,14 +2043,14 @@ MIB data and not working properly. Wrong configuration of CMs or CMTS.
 
 11.          Distortion red = static or trending or intermittent  
 
-**6.8.1 Use Cases **
+### 6.8.1 Use Cases 
 
 The following use cases describe how tools are used. Examples are provided in
 the following subsections.
 
-**_6.8.1.1 Use Case 1: In or Near Home Problem Identification _**
+#### _6.8.1.1 Use Case 1: In or Near Home Problem Identification _
 
-**Description **
+Description 
 
 Support User detects possible service problem by monitoring (proactive) or
 trouble call (reactive). Analysis tool is used to interrogate the customer’s
@@ -2058,21 +2059,21 @@ for radio-frequency reflections to determine approximate problem location.
 Location information is used to instruct Support User or dispatch a repair
 technician to resolve the problem.
 
-**Level: **User Goal **Primary Actor **
+Level: User Goal Primary Actor 
 
 Maintenance User or Support User
 
-**Supporting Actors **
+Supporting Actors 
 
 Customer, Repair Technician, Dispatch Personnel, Customer Modem, CMTS
 
-**Stakeholders and Interests **
+Stakeholders and Interests 
 
 Customer - may be unaware of service trouble in proactive scenario. Plant
 Maintenance - non-critical repair may be scheduled during routine maintenance.
 Billing Personnel - billing system accounts may need to be reconciled.
 
-**Pre-Conditions **
+Pre-Conditions 
 
 Support User must have specific knowledge of a possible service problem.
 Customer’s modem must be online. CMTS and customer modem must both support
@@ -2084,7 +2085,7 @@ interpreting the data.
 Impairments to the customer’s signal must be such that the modem can still
 respond correctly.
 
-**Post Conditions **
+Post Conditions 
 
 Success end condition
 
@@ -2098,12 +2099,12 @@ Failure end condition
 Modem fails to demonstrate any actionable performance metrics. No remediation
 of problem, customer may experience recurrence or deterioration of service.
 
-**Trigger **
+Trigger 
 
 Proactive alert identifies possible service affecting problem OR reactive
 alert, customer calls with trouble.
 
-**Main Success Scenario **
+Main Success Scenario 
 
 1\. Customer calls with service trouble.
 
@@ -2132,7 +2133,7 @@ premise.
 
 10.         Repair Technician locates trouble and resolves issue.  
 
-**Extensions **
+Extensions 
 
 4a. in Step 4, the customer information is not located. • Trouble is escalated
 to billing department for account reconciliation.
@@ -2160,7 +2161,7 @@ is likely to be at or above the tap. 1b. single customer devices demonstrate
 distortion - fault is more likely to between the tap and something in the
 customer’s home.
 
-**Variations **
+Variations 
 
 1a. in Step 1, proactive monitoring may provide use case trigger. 1b. in Step
 1, automations such as an interactive telephone system may provide use case
@@ -2168,23 +2169,23 @@ trigger. 2a. in Step 2, the Support User role may be implemented as an
 automated telephone system. 3a. in Step 3, the customer identification may be
 any one of MAC, telephone number or account number.
 
-**Frequency **
+Frequency 
 
 Use case is executed per each trouble call, day of install or subject to the
 frequency of proactive monitoring.
 
-**Assumptions **
+Assumptions 
 
 Users of the system must have basic knowledge of troubleshooting cable service
 problems. Users must have required access and training of the analysis tools.
-**Special Requirements **All systems must support authentication and
-encryption pursuant to corporate security standards. **Issues **
+Special Requirements All systems must support authentication and
+encryption pursuant to corporate security standards. Issues 
 
 15.         Distance calculations are preliminary, subject to market specific conditions and trial findings.  
 
 16.         Distance estimates actually describe the distance between two impedance mismatches  (reflectors). In the case of in or near home, the assumption is made that one of the reflections is within the subscriber’s home. This may not always be the case however the majority of the time, this holds correct. There will be some cases where an outside plant issue may be incorrectly characterized as “in or near home” problem.  
 
-**To do **
+To do 
 
 11.         Validate use case in arid climates with less water ingress and corrosion.  
 
@@ -2196,37 +2197,37 @@ the distance calculations.
 
 ![](PNMP.files/image180.png)
 
-**6.8.2 Use Case: Upstream Ingress or Noise Detection **
+### 6.8.2 Use Case: Upstream Ingress or Noise Detection 
 
-**Description **
+Description 
 
 Support User detects possible service problem by monitoring (proactive) or
 trouble call (reactive). Analysis tool is used to interrogate the customer’s
 modem and CMTS for performance information. The performance data is analyzed
 for additive influence in the modem transmission.
 
-**Level: **User Goal **Primary Actor **
+Level: User Goal Primary Actor 
 
 Maintenance User or Support User
 
-**Supporting Actors **
+Supporting Actors 
 
 Customer, Repair Technician, Dispatch Personnel, Customer Modem, CMTS
 
-**Stakeholders and Interests **
+Stakeholders and Interests 
 
 Customer - may be unaware of service trouble in proactive scenario. Plant
 Maintenance - non-critical repair may be scheduled during routine maintenance.
 Billing Personnel - billing system accounts may need to be reconciled.
 
-**Pre-Conditions **
+Pre-Conditions 
 
 Support User must have specific knowledge of a possible service problem. CMTS
 and customer modem must both support Adaptive Equalization. Analysis tool must
 be available to the Support User. Support User must have sufficient access and
 knowledge of using the tool and interpreting the data.
 
-**Post Conditions **
+Post Conditions 
 
 Success end condition
 
@@ -2241,12 +2242,12 @@ Intermittent ingress such as impulse may no longer be present. Modem fails to
 demonstrate any actionable performance metrics. No remediation of problem,
 customer may experience recurrence or deterioration of service.
 
-**Trigger **
+Trigger 
 
 Proactive alert identifies possible service affecting problem OR reactive
 alert, customer calls with trouble.
 
-**Main Success Scenario **
+Main Success Scenario 
 
 17.         Customer calls with service trouble.  
 
@@ -2290,28 +2291,28 @@ by
 
 loose, damaged or corroded connectors or cable.
 
-**Variations **
+Variations 
 
 1a. in Step 1, proactive monitoring may provide use case trigger. 1b. in Step
 1, automations such as an interactive telephone system may provide use case
 trigger. 2a. in Step 2, the Support User role may be implemented as an
 automated telephone system. 3a. in Step 3, the customer identification may be
-any one of MAC, telephone number or account number. **Frequency **
+any one of MAC, telephone number or account number. Frequency 
 
 Use case is executed per each trouble call, day of install or subject to the
 frequency of proactive monitoring.
 
-**Assumptions **
+Assumptions 
 
 Users of the system must have basic knowledge of troubleshooting cable service
 problems. Users must have required access and training of the analysis tools.
-**Special Requirements **All systems must support authentication and
-encryption pursuant to corporate security standards. **Issues **
+Special Requirements All systems must support authentication and
+encryption pursuant to corporate security standards. Issues 
 
 3\. Magnitude of equalized response ripples from the CMTS need to be
 correlated to concrete BER / MER values. Pending lab work.
 
-**To do **
+To do 
 
 3\. Better correlate the perception of “noise” with unstable equalizer
 operation. This is reproducible with corrosion.
@@ -2320,9 +2321,9 @@ operation. This is reproducible with corrosion.
 
 ![](PNMP.files/image184.png)
 
-**6.8.3 Use Cases 3-11 **
+### 6.8.3 Use Cases 3-11 
 
-**_Figure 45 - Effects of Ingress When Mapped _**
+_Figure 45 - Effects of Ingress When Mapped _
 
 1.    Plant technician trying to solve a frequency response problem with the upstream or augment system upstream sweeping. State 2.  Actors: Technician, NOC  External Event: Distortion red, other indicators yellow/green or plant sweep shows problem/anomaly  Proactive/High distortion detected Group of CMs Expected Outcome: Distortion removed  
 
@@ -2355,7 +2356,7 @@ or no distortion problem, service call avoided
 
 8.    Resolving flapping problems and unstable equalization solutions. State 3 or State 4. Actors: NOC  External Event: CMTS not compensating or improperly compensating for distortion, high uncorrectable FEC statistics, high impulse noise scenario  Reactive/CMTS change in distortion detected Group of CMs (if distortion generated), all CMs in node (if impulse generated) Expected Outcome: Problem identified, located and resolved  
 
-**6.9 Post-equalization **
+## 6.9 Post-equalization 
 
 As its name indicates, post-equalization is the process of distortion
 compensation after the signal has been received. In the cable environment,
@@ -2375,7 +2376,7 @@ enabled the implementation of per burst equalization which is now common in
 CMTSs. The advantages and disadvantages of pre- versus post-equalization are
 discussed next.
 
-**6.9.1 Advantages of Pre-equalization **
+### 6.9.1 Advantages of Pre-equalization 
 
 Reliable diagnostic transmission analysis is enabled by the regular complex
 coefficient updates the CMTS equalizer provides to individual cable modems
@@ -2396,12 +2397,12 @@ services. In some cases there would appear to be some instability or
 inconsistency in the metrics being reported when using pre-equalization. Some
 causes for such behavior are discussed next.
 
-**6.9.2 Disadvantages of Pre-equalization **
+### 6.9.2 Disadvantages of Pre-equalization 
 
 Pre-equalization disadvantages are worth mentioning although they can be
 considered minor compared to the advantages.
 
-**Memory **
+Memory 
 
 Operation of pre-equalization has memory associated with the function, and
 that memory lives in the convolution of the equalizer updates in the cable
@@ -2425,7 +2426,7 @@ in one manner or another. There are indeed many options available to the CMTS
 to deal with equalizer corruptions, but that topic is beyond the scope of this
 document.
 
-**CM TX Level Increased **
+CM TX Level Increased 
 
 One unfortunate but direct consequence of the transmit pre-equalization
 process occurs when there is significant amplitude roll-off present on a given
@@ -2457,11 +2458,11 @@ its transmit level to the correct amount then the CMTS will only allow as much
 low input signal level to exist as was defined in the CMTS’s operating
 configuration.
 
-**6.9.3 Advantages of Post-equalization **
+### 6.9.3 Advantages of Post-equalization 
 
 The following summarizes some of the benefits of post-equalization.
 
-**No Memory **
+No Memory 
 
 Since post-equalization operation starts off every new data burst from
 scratch, there are no pre-stored conditions required. As such, there is no
@@ -2478,7 +2479,7 @@ more stable, or the simplicity of the post-equalization process results in a
 more stable performance loop over all. This is particularly true in the below
 20 MHz frequency range where both ingress and impulse noise are common.
 
-**Lower Cable Modem Transmit Levels **
+Lower Cable Modem Transmit Levels 
 
 At the upper end of the return path spectrum there is generally no mechanism
 that will result in the post- equalization process requesting more cable modem
@@ -2490,7 +2491,7 @@ being convolved in the cable modem for post-equalization to work.
 A reasonably strong case can be argued for using post-equalization only when
 in TDMA or A-TDMA mode below 30 MHz, and definitely below 20 MHz.
 
-**6.9.4 Disadvantages of Post-equalization **
+### 6.9.4 Disadvantages of Post-equalization 
 
 The following summarizes several disadvantages of post-equalization.
 
@@ -2508,9 +2509,9 @@ The following summarizes several disadvantages of post-equalization.
 
 ![](PNMP.files/image186.png)
 
-**7 PNM USING FULL BAND CAPTURE **
+# 7 PNM USING FULL BAND CAPTURE 
 
-**7.1 Technical Description of Process **
+## 7.1 Technical Description of Process 
 
 This section focuses on downstream FBC.
 
@@ -2540,7 +2541,7 @@ are visible.
 
 ![](PNMP.files/image190.png)
 
-**7.1.1 What Does FBC Do For Operators? **
+### 7.1.1 What Does FBC Do For Operators? 
 
 FBC can be used to remotely troubleshoot a variety of headend, outside plant,
 and subscriber drop problems. Since the spectrum analyzer-like functionality
@@ -2556,7 +2557,7 @@ subscribers’ homes, it may be possible to determine the approximate location
 of the source of a given impairment. A technician can be dispatched directly
 to the suspected problem area, simplifying troubleshooting and saving time.
 
-**7.1.2 How FBC Works **
+### 7.1.2 How FBC Works 
 
 As mentioned previously, a spectrum analyzer is a device which measures the
 frequency content of an input signal. Fortunately, this is precisely what DFT
@@ -2594,13 +2595,13 @@ being analyzed in segments, then the tuner is used to step through a sequence
 of analysis segments of the band, and the individual spectrum segments are
 spliced together to produce the overall wideband spectrum.
 
-**7.2 Field examples and screen shots **
+## 7.2 Field examples and screen shots 
 
 This section includes several examples of FBC screen shots as “seen” at the
 cable modem. The horizontal axis in each figure is frequency in MHz, and the
 vertical axis is in dB. Images are courtesy of Comcast.
 
-**7.2.1 Ingress **
+### 7.2.1 Ingress 
 
 Technicians can look at a captured spectrum display for indications of the
 presence of downstream ingress (and in some cases, direct pickup). If a
@@ -2611,7 +2612,7 @@ figure) as well as in the LTE band (near the right end of the figure).
 
 ![](PNMP.files/image196.png)
 
-**7.2.2 Multiple problems **
+### 7.2.2 Multiple problems 
 
 Figure 51 shows a FBC from one modem, in which multiple downstream impairments
 can be seen
@@ -2627,7 +2628,7 @@ incorrect narrowcast injection levels. A third problem is a QAM channel near
 563 MHz that is a few dB lower than the adjacent channels. A fourth problem
 also is level-related, in the vicinity of 250 MHz.
 
-**7.2.3 Displaying Multiple Modems **
+### 7.2.3 Displaying Multiple Modems 
 
 It is possible to simultaneously display an overlay of spectrum data from
 multiple cable modems - say, modems in the same neighborhood. Figure 52
@@ -2643,7 +2644,7 @@ shot.
 
 ![](PNMP.files/image202.png)
 
-**7.2.4 Presence of filters **
+### 7.2.4 Presence of filters 
 
 Figure 54 includes two examples where filters are present in subscriber drops.
 The upper trace in the figure shows the effects of a bandstop filter (an
@@ -2651,7 +2652,7 @@ adjacency problem is visible at two locations in the
 
 ![](PNMP.files/image204.png)
 
-**7.2.5 Rolloff **
+### 7.2.5 Rolloff 
 
 Rolloff is a non-flat loss of signal level-versus-frequency at or near the
 lower or upper end of the RF spectrum. When rolloff occurs at the upper end of
@@ -2663,9 +2664,9 @@ the upper end of the downstream spectrum.
 
 ![](PNMP.files/image206.png)
 
-**7.2.6 Tilt **
+### 7.2.6 Tilt 
 
-**_Figure 55 - Rolloff at the Upper End of the Downstream Spectrum _**
+_Figure 55 - Rolloff at the Upper End of the Downstream Spectrum _
 
 Tilt describes the condition where signal levels vary from low to high in a
 more or less linear manner as frequency increases (positive tilt), or from
@@ -2678,7 +2679,7 @@ tilt.
 
 ![](PNMP.files/image208.png)
 
-**7.2.7 Resonant Peaking **
+### 7.2.7 Resonant Peaking 
 
 Resonant peaking affects a relatively narrow frequency range, typically no
 more than a handful of channels. The peaking can exist anywhere in the
@@ -2691,9 +2692,9 @@ highlights examples of resonant peaking.
 
 ![](PNMP.files/image210.png)
 
-**7.2.8 Making It Work **
+### 7.2.8 Making It Work 
 
-**_7.2.8.1 How to Capture Data from Devices Equipped with FBC Functionality _**
+#### _7.2.8.1 How to Capture Data from Devices Equipped with FBC Functionality _
 
 _7.2.8.1.1 Design Considerations _
 
@@ -2739,7 +2740,7 @@ done for OSS functions. If a user is only going to work on a real time display
 then this consideration isn't particularly problematic, but if the data is for
 proactive analytics then it's a large challenge.
 
-**7.3 Method to Find a Time Response from an IFFT when Phase Data is Not Available **
+## 7.3 Method to Find a Time Response from an IFFT when Phase Data is Not Available 
 
 The FBC is used by cable modems and set-top boxes to provide magnitude-only
 spectral data about RF path conditions in a remote location, such as a home.
@@ -2750,7 +2751,7 @@ and ingress.
 This method applies to blocks of QAM signals to identify the existence of an
 echo tunnel that causes ripple in the frequency response. See `
 
-**7.3.1 Method: **
+### 7.3.1 Method: 
 
 26.         Pick a block of averaged (smoothed) contiguous digital signals, as many as possible. For example, each 7.5 MHz block of frequency domain data may have 256 spectral components, and multiple blocks are pasted together to make a wide spectral response.  
 
