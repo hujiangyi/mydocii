@@ -83,7 +83,7 @@
  - [WIN10激活](system/WIN10激活.md)
  - [Win10应用、Crtana小娜都打不开问题的解决](system/Win10应用、Crtana小娜都打不开问题的解决.md)
 * 第十四章 工作相关
- - [PNMP](pnm/PNMP.md)
+ - [PNMP](pnm/PNMPFull.md)
  - [SNR与CNR](knowledge/SNR与CNR.md)
  - [功能调试中日志配置调整记录](work/功能调试中日志配置调整记录.md)
  - [发送OLT测试告警](work/发送OLT测试告警.md)

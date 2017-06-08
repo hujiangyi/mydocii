@@ -718,7 +718,7 @@ decoding process would be identical to the third nibble process.
 
 The real and imaginary complex coefficients of a DOCSIS 2.0 upstream pre-
 equalizer defined as: F1R, F1I, F2R, F2I, F3R, F3I, F4R, F4I,. . . F23R, F23I,
-F24R, F24I, and will be used to define several key metrics that follow.
+F24R, F24I, and will be used to define several key metrics that follow.
 
 **6.3.1 Adaptive Equalizer Main Tap Energy **
 
@@ -750,7 +750,7 @@ position, is defined as:
 The summation of the energy in all equalizer taps prior to the main tap
 provides the pre-main tap energy
 
-(PreMTE). The pre-main tap energy assuming a main tap in the eighth position
+(PreMTE). The pre-main tap energy assuming a main tap in the eighth position
 is defined as:
 
 ![](PNMP.files/image042.png)
@@ -1034,7 +1034,7 @@ ff fb 00 00 00 08 ff ff ff fe 00 00 00 04 ff fc ff ff 00 08 00 00
 00 08 FF D8 00 40 00 40 FF E8 00 00 00 00 FF C0 00 48 00 20 00 20 00 58 00 10
 FF F0 00 00 FF E8 FF F0 FF D8 00 50 00 00 FF D8 FF F0 00 18 FF E8
 
-**UpstreamFrequency **(8 bytes character storage, 4 bytes binary storage) 29300000 **UpstreamWidth **(8 bytes character storage, 4 bytes binary storage) 6400000 
+**UpstreamFrequency **(8 bytes character storage, 4 bytes binary storage) 29300000 **UpstreamWidth **(8 bytes character storage, 4 bytes binary storage) 6400000 
 
 A payload of 614 bytes with a million devices translates to nearly 600
 megabytes. At 5 million devices, a single poll represents almost 3 gigabytes.
@@ -2014,12 +2014,12 @@ performance of the measurement devices for different scenarios operators may
 encounter in the field.
 
 State 1. Adaptive equalizer tool is working properly and plant is within
-acceptable limits. State 2. Adaptive equalizer tool is working properly, and
+acceptable limits. State 2. Adaptive equalizer tool is working properly, and
 plant exhibits severe linear distortion.
 
 Plant is stable
 
-Plant is unstable (intermittent or trending) State 3. Adaptive equalizer tool
+Plant is unstable (intermittent or trending) State 3. Adaptive equalizer tool
 is working properly, but CMTS/CM is reacting badly
 
 Transmission characteristics in channel have resulted in no solution for CM
@@ -2027,10 +2027,10 @@ coefficients (e.g., a deep suck-out or echo is too long or too severe)
 
 Upstream impulsive noise is causing wrong or unstable adaption.
 
-CM needs to be replaced State 4. Adaptive equalizer tool is not working
+CM needs to be replaced State 4. Adaptive equalizer tool is not working
 correctly because of equipment design or configuration.
 
-CMs are giving wrong MIB data, but working properly. CMs are giving wrong/no
+CMs are giving wrong MIB data, but working properly. CMs are giving wrong/no
 MIB data and not working properly. Wrong configuration of CMs or CMTS.
 
 The CMTS is not configured for adaptive pre-equalization in the upstream
@@ -2065,14 +2065,14 @@ Customer, Repair Technician, Dispatch Personnel, Customer Modem, CMTS
 
 **Stakeholders and Interests **
 
-Customer - may be unaware of service trouble in proactive scenario. Plant
+Customer - may be unaware of service trouble in proactive scenario. Plant
 Maintenance - non-critical repair may be scheduled during routine maintenance.
 Billing Personnel - billing system accounts may need to be reconciled.
 
 **Pre-Conditions **
 
 Support User must have specific knowledge of a possible service problem.
-Customer’s modem must be online. CMTS and customer modem must both support
+Customer’s modem must be online. CMTS and customer modem must both support
 Adaptive Equalization. Analysis tool must be available to the Support User.
 
 User must have sufficient access and knowledge of using the tool and
@@ -2115,13 +2115,13 @@ information.
 Reference SD-PNM200 for software sequence (Appendix VI).
 
 Performance data is analyzed to obtain reflection information if available,
-used for distance  calculations.
+used for distance  calculations.
 
 Support User is presented with customer’s service address and an estimate of
-problem distance  from home.
+problem distance  from home.
 
 Support User evaluates distance information to determine “in or near home”
-problem, escalates  to Dispatch Personnel.
+problem, escalates  to Dispatch Personnel.
 
 Dispatch Personnel evaluates trouble call information and approves a repair
 call.
@@ -2133,7 +2133,7 @@ Repair Technician locates trouble and resolves issue.
 
 **Extensions **
 
-4a. in Step 4, the customer information is not located. • Trouble is escalated
+4a. in Step 4, the customer information is not located. • Trouble is escalated
 to billing department for account reconciliation.
 
 4b. in Step 4, the modem or CMTS do not support equalization analysis. •
@@ -2146,22 +2146,22 @@ escalated to a higher rate
 
 5b. in Step 5, customer has multiple devices at premises.
 
-1\. All devices are analyzed for similar distortion characteristics 1a.
-multiple devices share distortion - common fault is noted in analysis 1b.
+1\. All devices are analyzed for similar distortion characteristics 1a.
+multiple devices share distortion - common fault is noted in analysis 1b.
 Single device demonstrates distortion - scope of analysis is narrowed to “in
 home”
 
 5c. in Step 5, adjacent homes may also be analyzed
 
 1\. All devices within a specified radius are analyzed for similar distortion
-characteristics 1a. multiple customer devices share distortion - common fault
+characteristics 1a. multiple customer devices share distortion - common fault
 is likely to be at or above the tap. 1b. single customer devices demonstrate
 distortion - fault is more likely to between the tap and something in the
 customer’s home.
 
 **Variations **
 
-1a. in Step 1, proactive monitoring may provide use case trigger. 1b. in Step
+1a. in Step 1, proactive monitoring may provide use case trigger. 1b. in Step
 1, automations such as an interactive telephone system may provide use case
 trigger. 2a. in Step 2, the Support User role may be implemented as an
 automated telephone system. 3a. in Step 3, the customer identification may be
@@ -2175,15 +2175,15 @@ frequency of proactive monitoring.
 **Assumptions **
 
 Users of the system must have basic knowledge of troubleshooting cable service
-problems. Users must have required access and training of the analysis tools.
-**Special Requirements **All systems must support authentication and
+problems. Users must have required access and training of the analysis tools.
+**Special Requirements **All systems must support authentication and
 encryption pursuant to corporate security standards. **Issues **
 
 Distance calculations are preliminary, subject to market specific conditions
 and trial findings.
 
 Distance estimates actually describe the distance between two impedance
-mismatches  (reflectors). In the case of in or near home, the assumption is
+mismatches  (reflectors). In the case of in or near home, the assumption is
 made that one of the reflections is within the subscriber’s home. This may not
 always be the case however the majority of the time, this holds correct. There
 will be some cases where an outside plant issue may be incorrectly
@@ -2221,15 +2221,15 @@ Customer, Repair Technician, Dispatch Personnel, Customer Modem, CMTS
 
 **Stakeholders and Interests **
 
-Customer - may be unaware of service trouble in proactive scenario. Plant
+Customer - may be unaware of service trouble in proactive scenario. Plant
 Maintenance - non-critical repair may be scheduled during routine maintenance.
 Billing Personnel - billing system accounts may need to be reconciled.
 
 **Pre-Conditions **
 
-Support User must have specific knowledge of a possible service problem. CMTS
-and customer modem must both support Adaptive Equalization. Analysis tool must
-be available to the Support User. Support User must have sufficient access and
+Support User must have specific knowledge of a possible service problem. CMTS
+and customer modem must both support Adaptive Equalization. Analysis tool must
+be available to the Support User. Support User must have sufficient access and
 knowledge of using the tool and interpreting the data.
 
 **Post Conditions **
@@ -2262,7 +2262,7 @@ Customer identification is used to obtain the modem MAC address and CMTS for
 the customer.
 
 MAC address is used to query both the modem and CMTS for performance
-information.  • Reference SD-PNM200 for software sequence. (Appendix VI)
+information.  • Reference SD-PNM200 for software sequence. (Appendix VI)
 
 Performance data is analyzed to obtain the distortion present at the CMTS
 after equalization.
@@ -2277,7 +2277,7 @@ Customer is asked to tighten connectors and remove extra cable or splitters.
 Support User rescans device for performance information and perceives that the
 problem has been resolved.
 
-Extensions 4a. in Step 4, the customer information is not located.
+Extensions 4a. in Step 4, the customer information is not located.
 
 2\. Trouble is escalated to billing department for account reconciliation. 4b.
 in Step 4, the modem or CMTS do not support equalization analysis.
@@ -2291,11 +2291,11 @@ Proactive monitoring is escalated to a higher rate
 
 6a. in Step 6, modems on same node may also be analyzed
 
-2\. All devices sharing the common upstream interface are analyzed 1a.
+2\. All devices sharing the common upstream interface are analyzed 1a.
 multiple customer devices share ingress - one or more points of ingress need
 to be resolved.
 
-a. Trouble is escalated to Dispatch for maintenance scheduling 1b. single
+a. Trouble is escalated to Dispatch for maintenance scheduling 1b. single
 customer device demonstrates noisy response - likely impedance problem caused
 by
 
@@ -2303,10 +2303,10 @@ loose, damaged or corroded connectors or cable.
 
 **Variations **
 
-1a. in Step 1, proactive monitoring may provide use case trigger. 1b. in Step
+1a. in Step 1, proactive monitoring may provide use case trigger. 1b. in Step
 1, automations such as an interactive telephone system may provide use case
-trigger. 2a. in Step 2, the Support User role may be implemented as an
-automated telephone system. 3a. in Step 3, the customer identification may be
+trigger. 2a. in Step 2, the Support User role may be implemented as an
+automated telephone system. 3a. in Step 3, the customer identification may be
 any one of MAC, telephone number or account number. **Frequency **
 
 Use case is executed per each trouble call, day of install or subject to the
@@ -2315,8 +2315,8 @@ frequency of proactive monitoring.
 **Assumptions **
 
 Users of the system must have basic knowledge of troubleshooting cable service
-problems. Users must have required access and training of the analysis tools.
-**Special Requirements **All systems must support authentication and
+problems. Users must have required access and training of the analysis tools.
+**Special Requirements **All systems must support authentication and
 encryption pursuant to corporate security standards. **Issues **
 
 3\. Magnitude of equalized response ripples from the CMTS need to be
@@ -2336,13 +2336,13 @@ operation. This is reproducible with corrosion.
 **_Figure 45 - Effects of Ingress When Mapped _**
 
 Plant technician trying to solve a frequency response problem with the
-upstream or augment system upstream sweeping. State 2.  Actors: Technician,
-NOC  External Event: Distortion red, other indicators yellow/green or plant
-sweep shows problem/anomaly  Proactive/High distortion detected Group of CMs
+upstream or augment system upstream sweeping. State 2.  Actors: Technician,
+NOC  External Event: Distortion red, other indicators yellow/green or plant
+sweep shows problem/anomaly  Proactive/High distortion detected Group of CMs
 Expected Outcome: Distortion removed
 
 Tech Supervisor: To deploy technicians. Verify technicians got the upstream
-frequency response issues resolved. State 2 becoming State 1.  Actors: Tech
+frequency response issues resolved. State 2 becoming State 1.  Actors: Tech
 Supervisor, Technician External Event: Close out trouble ticket Reactive and
 Proactive
 
@@ -2354,14 +2354,14 @@ coefficient energy reduced)
 CMTS having issues due to equalization. Unable to compensate for channel.
 Micro-reflection too long or no inverse solution, e.g., notch in channel.
 Upstream burst noise interfering with the correct ranging of CMs’
-coefficients. State 3.  Actors: Technician, NOC, CSR, HE Tech External Event:
+coefficients. State 3.  Actors: Technician, NOC, CSR, HE Tech External Event:
 Distortion red, other indicators yellow or red Reactive/High distortion
-detected Group of CMs Expected Outcome: Fix cause of impairment
+detected Group of CMs Expected Outcome: Fix cause of impairment
 
 QA for accessing a node health score. Goes along with upstream MER (on a per
-CMTS port or per CM basis). States 1 and 2.  Actors: Technician, NOC (QA)
+CMTS port or per CM basis). States 1 and 2.  Actors: Technician, NOC (QA)
 External Event: Periodic scan and alarms - Distortion red, other indicators
-red/yellow/green Reactive and Proactive/High distortion detected Group of CMs
+red/yellow/green Reactive and Proactive/High distortion detected Group of CMs
 Expected Outcome: Distortion removed
 
 Identification or location of faults. Combine location technique with GPS data
@@ -2370,28 +2370,28 @@ Condition 2. (Subset)
 
 Qualifying an upstream for a wider channel RF bandwidth or higher order
 modulation. Qualification can also be done to verify a service level agreement
-(SLA). States 1 and 2.  Actors: Initially NOC, then technicians External
-Event: Distortion red, other indicators yellow/green Use higher order
+(SLA). States 1 and 2.  Actors: Initially NOC, then technicians External
+Event: Distortion red, other indicators yellow/green Use higher order
 modulation and wide bandwidth channel as reference Generally Proactive/High
-distortion detected Group of CMs Expected Outcome: Node qualified
+distortion detected Group of CMs Expected Outcome: Node qualified
 
 9 CSR quick check. See if something abnormal is going on, and if the neighbors
 have the same problem. All Conditions
 
-Actors: CSR, Technician External Event: Customer complaint Reactive/High
-distortion detected 1 device possible others Expected Outcome: Trouble ticket
+Actors: CSR, Technician External Event: Customer complaint Reactive/High
+distortion detected 1 device possible others Expected Outcome: Trouble ticket
 or no distortion problem, service call avoided
 
 Trend and Intermittent Issues Tracking. State 1 becoming State 2 Actors: NOC
 External Event: Distortion turning red within predetermined period,
 significant delta distortion within short time period, other indicators
-yellow/green  Proactive/Change in distortion detected Group of CMs Expected
+yellow/green  Proactive/Change in distortion detected Group of CMs Expected
 Outcome: Problem identified and located, trouble ticket generated
 
 Resolving flapping problems and unstable equalization solutions. State 3 or
-State 4. Actors: NOC  External Event: CMTS not compensating or improperly
+State 4. Actors: NOC  External Event: CMTS not compensating or improperly
 compensating for distortion, high uncorrectable FEC statistics, high impulse
-noise scenario  Reactive/CMTS change in distortion detected Group of CMs (if
+noise scenario  Reactive/CMTS change in distortion detected Group of CMs (if
 distortion generated), all CMs in node (if impulse generated) Expected
 Outcome: Problem identified, located and resolved
 
@@ -2839,19 +2839,19 @@ If necessary zero-pad the values to fill out a 2^n IFFT transform, such as
 Optionally, a window should be applied to the data.
 
 A frequency region with another signal, such as an analog RF carrier, or
-vacant band can be filled  in with a straight line connecting the channel just
-above the vacant band to the channel just below  the vacant band.
+vacant band can be filled  in with a straight line connecting the channel just
+above the vacant band to the channel just below  the vacant band.
 
 Perform an IFFT to put the data into the time domain.
 
 Transformed data will be symmetrical due to not providing quadrature values.
-You can discard the  image.
+You can discard the  image.
 
 A DC term will be present. Comb teeth will be present every 166.67 ns due to
-the notch between 6  MHz channels.
+the notch between 6  MHz channels.
 
 If there is an echo in the frequency response, there will be a ripple in the
-frequency domain. The  ripple will linearly transform to an impulse located
+frequency domain. The  ripple will linearly transform to an impulse located
 among the comb teeth. If the echo is an exact multiple of 166.67 ns, it cannot
 as easily be observed. The delay between the main impulse and echo is the
 round trip time of an echo tunnel, corrected for velocity of prorogation
