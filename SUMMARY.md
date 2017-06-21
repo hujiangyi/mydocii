@@ -94,8 +94,9 @@ int date;
  - [Win10应用、Crtana小娜都打不开问题的解决](system/Win10应用、Crtana小娜都打不开问题的解决.md)
 * 第十四章 工作相关
  - [PNMP](pnm/PNMPFull.md)
- - [PNMPzhCN](pnm/PNMPFULL_zhCN.md)
+ - [PNMP中文](pnm/PNMPFULL_zhCN.md)
  - [Pre-Equalization-Final](pnm/Pre-Equalization-Final.md)
+ - [Pre-Equalization-Final中文](pnm/Pre-Equalization-Final_zh_CN.md)
  - [SNR与CNR](knowledge/SNR与CNR.md)
  - [功能调试中日志配置调整记录](work/功能调试中日志配置调整记录.md)
  - [发送OLT测试告警](work/发送OLT测试告警.md)
