@@ -80,16 +80,6 @@
  - [ss 账号分享](https://dream.ren/ss.html)
  - [ss 账号分享](https://doub.bid/sszhfx)
 * 第十三章 windows
-public static long getSp(int year, int month, int day) {
-int date;
-public static long getSp(int year, int month, int day) {
-int date;
-public static long getSp(int year, int month, int day) {
-public static long getSp(int year, int month, int day) {
-int date;
-public static long getSp(int year, int month, int day) {
-int date;
-int date;
  - [WIN10激活](system/WIN10激活.md)
  - [Win10应用、Crtana小娜都打不开问题的解决](system/Win10应用、Crtana小娜都打不开问题的解决.md)
 * 第十四章 工作相关
@@ -97,6 +87,7 @@ int date;
  - [PNMP中文](pnm/PNMPFULL_zhCN.md)
  - [Pre-Equalization-Final](pnm/Pre-Equalization-Final.md)
  - [Pre-Equalization-Final中文](pnm/Pre-Equalization-Final_zh_CN.md)
+ - [DOCSIS-3.1-and-PNM-Toolbox](pnm/DOCSIS-3.1-and-PNM-Toolbox.md)
  - [SNR与CNR](knowledge/SNR与CNR.md)
  - [功能调试中日志配置调整记录](work/功能调试中日志配置调整记录.md)
  - [发送OLT测试告警](work/发送OLT测试告警.md)
@@ -105,7 +96,5 @@ int date;
  - [Linux版本安装或更新](work/Linux版本安装或更新.md)
  - [批量升级安装包制作](work/批量升级安装包制作.md)
  - [推广网站](http://172.17.1.251:8110/spread)
- public static long getSp(int year, int month, int day) {
- int date;
  - [李翔整理](http://172.17.1.251:8110/dm/dm.html)
  - [EMS-API](http://172.17.1.251:8110/ems-api)
