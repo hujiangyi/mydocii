@@ -83,13 +83,6 @@
  - [WIN10激活](system/WIN10激活.md)
  - [Win10应用、Crtana小娜都打不开问题的解决](system/Win10应用、Crtana小娜都打不开问题的解决.md)
 * 第十四章 工作相关
- - [PNMP](pnm/PNMPFull.md)
- - [PNMP中文](pnm/PNMPFULL_zhCN.md)
- - [Pre-Equalization-Final](pnm/Pre-Equalization-Final.md)
- - [Pre-Equalization-Final中文](pnm/Pre-Equalization-Final_zh_CN.md)
- - [DOCSIS-3.1-and-PNM-Toolbox](pnm/DOCSIS-3.1-and-PNM-Toolbox.md)
- - [DOCSIS-3.1-and-PNM-Toolbox中文](pnm/DOCSIS-3.1-and-PNM-Toolbox_zhCN.md)
- - [SNR与CNR](knowledge/SNR与CNR.md)
  - [功能调试中日志配置调整记录](work/功能调试中日志配置调整记录.md)
  - [发送OLT测试告警](work/发送OLT测试告警.md)
  - [DelayQueue的使用](work/DelayQueue的使用.md)
@@ -99,3 +92,13 @@
  - [推广网站](http://172.17.1.251:8110/spread)
  - [李翔整理](http://172.17.1.251:8110/dm/dm.html)
  - [EMS-API](http://172.17.1.251:8110/ems-api)
+* 第十五章 资料
+
+ - [PNMP](pnm/PNMPFull.md)
+ - [PNMP中文](pnm/PNMPFULL_zhCN.md)
+ - [Pre-Equalization-Final](pnm/Pre-Equalization-Final.md)
+ - [Pre-Equalization-Final中文](pnm/Pre-Equalization-Final_zh_CN.md)
+ - [DOCSIS-3.1-and-PNM-Toolbox](pnm/DOCSIS-3.1-and-PNM-Toolbox.md)
+ - [DOCSIS-3.1-and-PNM-Toolbox中文](pnm/DOCSIS-3.1-and-PNM-Toolbox_zhCN.md)
+ - [arris-spectral-efficiency-of-docsis-wp](pnm/arris_spectral_efficiency_of_docsis_wp.md)
+ - [SNR与CNR](knowledge/SNR与CNR.md)
