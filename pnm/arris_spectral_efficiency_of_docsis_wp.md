@@ -392,7 +392,7 @@ and therefore the LDPC coding gain (over RS FEC) will not be utilized.
 Figure 4 shows the application of the multiple modulation profiles to the
 shifted SNR distribution shown in Fig. 3 for both 8K and 4K FFT cases. In this
 case (SNR operating margin = 0 dB), the weighted average spectral efficiency
-is calculated to be 8.1996  bps/Hz and 7.5989 bps/Hz for the 8K and 4K FFT
+is calculated to be 8.1996  bps/Hz and 7.5989 bps/Hz for the 8K and 4K FFT
 cases, respectively. Note that these weighed average spectral efficiency
 numbers are scaled by the QAM-independent spectral efficiency numbers
 calculated earlier. The SNR or CNR thresholds used to map modulation orders to
@@ -440,7 +440,7 @@ increase the DS spectral efficiency of DOCSIS 3.1 systems. These include
 •  Gateway architecture, which yields less DS signal attenuation.
 
 •  DOCSIS 3.1 can capitalize on any plant upgrades (e.g., less cascades,
-digital  optics) or clean ups because it supports high modulation orders.
+digital  optics) or clean ups because it supports high modulation orders.
 
 •  OFDM is much more robust than single-carrier technology in non-AWGN
 environments. The above analyses only assumed AWGN. Other sources of noise
@@ -452,7 +452,7 @@ when compared to single-carrier technologies used in DOCSIS 3.0 [2] [3] [4].
 •  Finer resolution frequency domain CM equalizers.
 
 US DOCSIS 3.1 OFDMA CHANNEL CONFIGURATION PARAMETERS THAT AFFECT SPECTRAL
-EFFICIENCY  This section discusses the various OFDMA channel configuration
+EFFICIENCY  This section discusses the various OFDMA channel configuration
 parameters that affect the spectral efficiency. These include the guard bands,
 cyclic prefix, symbol shaping, FEC overhead, pilot pattern, US minislot
 structure, configuration, and placement, etc.
@@ -650,8 +650,8 @@ when compared to single-carrier technologies used in DOCSIS 3.0 [2] [3] [4].
 •  Fine resolution frequency domain CM pre-equalizers & CMTS post-equalizers
 
 •  Increased CM transmit power levels, which translates to higher SNR values.
-In  particular, DOCSIS 3.1 requires CMs to support maximum CM transmit power
-of  at least 65 dBmV. Higher values are permitted but not specified.
+In  particular, DOCSIS 3.1 requires CMs to support maximum CM transmit power
+of  at least 65 dBmV. Higher values are permitted but not specified.
 
 •  US modulation profile optimization across the spectrum occurs with minislot
 granularity in DOCSIS 3.1 as opposed to fixed modulation across the 6.4 MHz
