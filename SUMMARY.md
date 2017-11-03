@@ -26,6 +26,7 @@
  - [Git_忽略某些文件](linux/git/Git_忽略某些文件.md)
  - [Git_子项目](linux/git/Git_子项目.md)
 * 第七章 linux安装
+ - [创建和启用Swap交换区](linux/技巧/创建和启用Swap交换区.md)
  - [初始环境下修改root的秘码](linux/安装/初始环境下修改root的秘码.md)
  - [环境参数修改](linux/安装/环境参数修改.md)
  - [使用Xmanager远程访问KDE_2](linux/安装/如何设置Linux使用Xmanager远程访问KDE_2.md)
@@ -82,7 +83,9 @@
 * 第十三章 windows
  - [WIN10激活](system/WIN10激活.md)
  - [Win10应用、Crtana小娜都打不开问题的解决](system/Win10应用、Crtana小娜都打不开问题的解决.md)
-* 第十四章 工作相关
+* 第十四章 python
+ - [jython调用串口模块](python/jython调用串口模块.md)
+* 第十五章 工作相关
  - [功能调试中日志配置调整记录](work/功能调试中日志配置调整记录.md)
  - [发送OLT测试告警](work/发送OLT测试告警.md)
  - [DelayQueue的使用](work/DelayQueue的使用.md)
@@ -92,8 +95,7 @@
  - [推广网站](http://172.17.1.251:8110/spread)
  - [李翔整理](http://172.17.1.251:8110/dm/dm.html)
  - [EMS-API](http://172.17.1.251:8110/ems-api)
-* 第十五章 资料
-
+* 第十六章 资料
  - [PNMP](pnm/PNMPFull.md)
  - [PNMP中文](pnm/PNMPFULL_zhCN.md)
  - [Pre-Equalization-Final](pnm/Pre-Equalization-Final.md)
