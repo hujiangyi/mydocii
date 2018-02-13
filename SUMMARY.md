@@ -104,3 +104,4 @@
  - [DOCSIS-3.1-and-PNM-Toolbox中文](pnm/DOCSIS-3.1-and-PNM-Toolbox_zhCN.md)
  - [arris-spectral-efficiency-of-docsis-wp](pnm/arris_spectral_efficiency_of_docsis_wp.md)
  - [SNR与CNR](knowledge/SNR与CNR.md)
+ - [苹果手机电用光后充电不能开机](system/苹果手机电用光后充电不能开机问题的解决办法.md)
