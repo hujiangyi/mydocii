@@ -97,11 +97,8 @@
  - [EMS-API](http://172.17.1.251:8110/ems-api)
 * 第十六章 资料
  - [PNMP](pnm/PNMPFull.md)
- - [PNMP中文](pnm/PNMPFULL_zhCN.md)
  - [Pre-Equalization-Final](pnm/Pre-Equalization-Final.md)
- - [Pre-Equalization-Final中文](pnm/Pre-Equalization-Final_zh_CN.md)
  - [DOCSIS-3.1-and-PNM-Toolbox](pnm/DOCSIS-3.1-and-PNM-Toolbox.md)
- - [DOCSIS-3.1-and-PNM-Toolbox中文](pnm/DOCSIS-3.1-and-PNM-Toolbox_zhCN.md)
  - [arris-spectral-efficiency-of-docsis-wp](pnm/arris_spectral_efficiency_of_docsis_wp.md)
  - [SNR与CNR](knowledge/SNR与CNR.md)
  - [苹果手机电用光后充电不能开机](system/苹果手机电用光后充电不能开机问题的解决办法.md)
