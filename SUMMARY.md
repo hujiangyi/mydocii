@@ -2,6 +2,7 @@
 * [简介](README.md)
 * Soft Defined Network
  - [ODL之SDN](https://www.sdnlab.com/17870.html)
+ - [NETCONF](http://blog.csdn.net/anzheangel/article/details/78885880)
 * hadoop 知识积累
  - [V2.7.3版安装](hadoop/部署hadoop2.7.3.md)
  - [HDFS设计思想](hadoop/HDFS架构和设计思想.md)
