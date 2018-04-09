@@ -105,7 +105,7 @@
 * 第十四章 python
  - [jython调用串口模块](python/jython调用串口模块.md)
 * 第十五章 工作相关
- - [snmp_socket_buf设置](snmp_socket_buf设置.txt)
+ - [snmp_socket_buf设置](snmp_socket_buf设置.md)
  - [多次打印同一异常后堆栈被隐藏](多次打印同一异常后堆栈被隐藏.md)
  - [功能调试中日志配置调整记录](work/功能调试中日志配置调整记录.md)
  - [发送OLT测试告警](work/发送OLT测试告警.md)

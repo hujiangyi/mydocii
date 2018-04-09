@@ -26,15 +26,15 @@
 
 3.配置firewalld-cmd
 
-查看版本： firewall-cmd --version
+查看版本： firewall-cmd \--version
 
-查看帮助： firewall-cmd --help
+查看帮助： firewall-cmd \--help
 
 显示状态： firewall-cmd --state
 
 查看所有打开的端口： firewall-cmd \--zone=public \--list-ports
 
-更新防火墙规则： firewall-cmd --reload
+更新防火墙规则： firewall-cmd \--reload
 
 查看区域信息:  firewall-cmd --get-active-zones
 
